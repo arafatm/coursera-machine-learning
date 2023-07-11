@@ -1,4 +1,4 @@
-# [Machine Learning | Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
+#![](img/ [Machine Learning | Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
 
 - [Discourse  - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
 
@@ -25,8 +25,8 @@ Supervised vs Unsupervised
 | image, radar   | position of other cars | self-driving car    |
 | image of phone | defect? (0/1)          | visual inspection   |
 
+Use different algorithms to predict price of house based on data
 ![](img/supervised.learning.regression.housing.price.prediction.png)
-- Use different algorithms to predict price of house based on data
 
 #### 1.1.3 Supervised Learning: Classification 
 
@@ -36,38 +36,38 @@ Supervised vs Unsupervised
 e.g. Breast cancer detection
 ![](img/supervised.classification.breast.cancer.png)
 
+we can have multiple outputs
 ![](img/supervised.learning.classification.malignant.png)
 
+we can draw a boundary line to separate our output
 ![](img/classification.multiple.inputs.png)
-- we can have multiple inputs
-- we can draw a boundary line to separate our output
 
 Supervised Learning
 
-|         | Regression | Classification |
-| -       | -          | -              |
-| Predict | number     | categories     |
-| Outputs | infinite   | limited        |
+|          | Regression | Classification |
+| -        | -          | -              |
+| Predicts | numbers    | categories     |
+| Outputs  | infinite   | limited        |
 
 #### 1.1.4 Unsupervised Learning 
 
-![](img/unsupervised.clusturing.png)
-- With unsupervised we don't have predetermined expected output
+With unsupervised we don't have predetermined expected output
 - we're trying to find structure in the pattern
 - in this example it's `clustering`
 - e.g. Google News will "cluster" news related to pandas given a specific article about panda/birth/twin/zoo
+![](img/unsupervised.clusturing.png)
 
+e.g. given set of individual genes, "cluster" similar genes
 ![](img/clustering.dna.microarray.png)
-- e.g. given set of individual genes, "cluster" similar genes
 
+e.g. how deeplearning.ai categorizes their learners
 ![](img/clustering.grouping.customers.png)
-- how deeplearning.ai categorizes their learners
 
 > `Unsupervised Learning`: Data only comes with inputs x, but not output labels y. 
 > Algorithm has to find _structure_ in the data  
-> - Clustering: Group similar data points together
-> - Anomaly Detection: Find unusual data points
-> - Dimensionality Reduction: Compress data using fewer numbers
+> - `Clustering`: Group similar data points together
+> - `Anomaly Detection`: Find unusual data points
+> - `Dimensionality Reduction`: Compress data using fewer numbers
 
 ###### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)
 - [ ] Given a set of news articles found on the web, group them into sets of articles about the same stories.
