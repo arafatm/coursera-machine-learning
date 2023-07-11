@@ -101,11 +101,11 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 01.01.house.size.and.price.png
 
 > `Training Set` := data used to train the model
->   `x` = *input* variable or **feature**
->   `y` = *output* variable or **target**
->    m = number of training examples
->   (x,y) = single training example
->   (xⁱ,yⁱ) = i-th training example 
+> - `x` = *input* variable or **feature**
+> - `y` = *output* variable or **target**
+> - m   = number of training examples
+> - (x,y) = single training example
+> - (xⁱ,yⁱ) = i-th training example 
 
 #### 1.1.07 Linear regression model part 2
 #### 1.1.07 Lab: Optional lab: Model representation
