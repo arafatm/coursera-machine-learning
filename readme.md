@@ -120,11 +120,6 @@ X[x (feature)] --> F
 F --> Y[ŷ (target or prediction)]
 ```
 
-$`f_w_,_b(x) = wx + b`$
-
-sS
-ŷ
-ₓ
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
