@@ -118,11 +118,7 @@ A[training set] --> B[learning algorithm]
 B --> F[f (function)]
 ```
 
-$$f_{w,b}(x) = wx + b$$ 
-
-is equivalent to 
-
-$$f(x) = wx + b$$
+$`f_{w,b}(x) = wx + b`$ is equivalent to $`f(x) = wx + b`$
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
