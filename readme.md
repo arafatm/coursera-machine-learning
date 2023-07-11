@@ -111,14 +111,7 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 
 #### Linear regression model part 2
 
-```mermaid
-flowchart TD
-
-A[Training Set] --> B[Learning Algorithm]
-B --> F[f (model)]
-X[x (feature)] --> F
-F --> Y[ŷ (target or prediction)]
-```
+`test`
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
@@ -126,4 +119,3 @@ F --> Y[ŷ (target or prediction)]
 #### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
-ting 
