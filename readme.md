@@ -125,8 +125,10 @@ $$f_{w,b}(x) = wx + b$$
 
 $$`f_{w,b}(x) = wx + b`$$
 
-$$`f_{w,b}(x) = wx + b`$$
-$$`f_{w,b}(x)`$$
+```math
+`f_{w,b}(x) = wx + b`
+`f_{w,b}(x)`
+```
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
