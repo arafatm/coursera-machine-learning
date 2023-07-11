@@ -111,7 +111,7 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 
 #### Linear regression model part 2
 
-$`_test`$
+$`f_w_,_b(x) = wx + b`$
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
