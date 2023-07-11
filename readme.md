@@ -116,7 +116,6 @@ flowchart TD
 
 A[training set] --> B[learning algorithm]
 B --> F[f (function)]
-X[x]
 ```
 
 $`f_{w,b}(x) = wx + b`$
