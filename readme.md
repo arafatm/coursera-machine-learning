@@ -79,5 +79,27 @@ e.g. how deeplearning.ai categorizes their learners
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
+#### **Quiz:** Supervised vs Unsupervised Learning
+
+Which are the two common types of supervised learning (choose two)
+- [ ] Classificaiton
+- [ ] Regression
+- [ ] Clustering
+
+Which of these is a type of unsupervised learning?
+- [ ] Clustering
+- [ ] Regression
+- [ ] Classification
+
+#### 1.1.06 Linear regression model part 1
+
 xxx
+
+#### 1.1.07 Linear regression model part 2
+#### 1.1.07 Lab: Optional lab: Model representation
+#### 1.1.09 Cost function formula
+#### 1.1.10 Cost function intuition
+#### 1.1.11 Visualizing the cost function
+#### 1.1.12 Visualization examples
+#### 1.1.13 Lab: Optional lab: Cost function
 
