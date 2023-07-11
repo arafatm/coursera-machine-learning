@@ -111,6 +111,12 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 
 #### Linear regression model part 2
 
+```mermaid
+flowchart TD
+
+[training set] --> [learning algorithm]
+```
+
 $`f_{w,b}(x) = wx + b`$
 
 #### Lab: Optional lab: Model representation
