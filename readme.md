@@ -25,6 +25,8 @@ Supervised vs Unsupervised
 | image, radar   | position of other cars | self-driving car    |
 | image of phone | defect? (0/1)          | visual inspection   |
 
+![](img/regression.housing.price.prediction.png)
+
 #### Unsupervised Learning 
 
 #### Jupyter Notebooks
