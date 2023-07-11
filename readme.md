@@ -113,6 +113,11 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 
 ```mermaid
 flowchart TD
+
+A[Training Set] --> B[Learning Algorithm]
+B --> F[f (model)]
+X[x (feature)] --> F
+F --> Y[ŷ (target or prediction)]
 ```
 
 #### Lab: Optional lab: Model representation
