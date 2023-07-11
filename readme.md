@@ -6,13 +6,13 @@
 
 ### 1.1: Introduction to Machine Learning
 
-#### 1.1.1 What is machine learning?
+#### 1.1.01 What is machine learning?
 
 > Field of study that gives computers the ability learn without being explicitly pogrammed -- Arthur Samuel
 
 Supervised vs Unsupervised
 
-#### 1.1.2 Supervised Learning: Regression Algorithms 
+#### 1.1.02 Supervised Learning: Regression Algorithms 
 
 > learn x to y or input to output mappings
 
@@ -28,7 +28,7 @@ Supervised vs Unsupervised
 Use different algorithms to predict price of house based on data
 ![](img/supervised.learning.regression.housing.price.prediction.png)
 
-#### 1.1.3 Supervised Learning: Classification 
+#### 1.1.03 Supervised Learning: Classification 
 
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
@@ -49,7 +49,7 @@ Supervised Learning
 | Predicts | numbers    | categories     |
 | Outputs  | infinite   | limited        |
 
-#### 1.1.4 Unsupervised Learning 
+#### 1.1.04 Unsupervised Learning 
 
 With unsupervised we don't have predetermined expected output
 - we're trying to find structure in the pattern
@@ -70,12 +70,13 @@ e.g. how deeplearning.ai categorizes their learners
 > - `Dimensionality Reduction`: Compress data using fewer numbers
 
 ###### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)
+
 - [ ] Given a set of news articles found on the web, group them into sets of articles about the same stories.
 - [ ] Given email labeled as spam/not spam, learn a spam filter.
 - [ ] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-#### 1.1.5 **Lab:** Python and Jupyter Notebooks
+#### 1.1.05 **Lab:** Python and Jupyter Notebooks
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
@@ -92,6 +93,9 @@ Which of these is a type of unsupervised learning?
 - [ ] Classification
 
 #### 1.1.06 Linear regression model part 1
+
+> `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
+- most commonly used model
 
 xxx
 
