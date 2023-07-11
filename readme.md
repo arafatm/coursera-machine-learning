@@ -118,8 +118,13 @@ A[training set] --> B[learning algorithm]
 B --> F[f (function)]
 ```
 
+`f` is a linear function with _one_ variable
 - $`f_{w,b}(x) = wx + b`$ is equivalent to 
 - $`f(x) = wx + b`$
+
+> `Univariate` linear regression => one variable
+
+01.01.linear.regression.png
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
