@@ -100,7 +100,7 @@ Which of these is a type of unsupervised learning?
 e.g. Finding the right house price based on dataset of houses by sq ft.
 01.01.house.size.and.price.png
 
-| Terminology  | :-                              |
+| Terminology  |                                 |
 | -:           | :-                              |
 | Training Set | data used to train the model    |
 | x            | *input* variable or **feature**
