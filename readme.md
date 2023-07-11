@@ -115,12 +115,15 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 flowchart TD
 
 A[Training Set] --> B[Learning Algorithm]
-B --> F[f]
-X[x] --> F
-F --> Y[ŷ]
+B --> F[f (model)]
+X[x (feature)] --> F
+F --> Y[ŷ (target or prediction)]
 ```
 
- ŷ
+$` f_w_,_b(x) = wx + b `$
+sS
+ŷ
+ₓ
 
 #### Lab: Optional lab: Model representation
 #### Cost function formula
