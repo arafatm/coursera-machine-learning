@@ -115,7 +115,6 @@ e.g. Finding the right house price based on dataset of houses by sq ft.
 flowchart TD
 
 A[training set] --> B[learning algorithm]
-B --> F[f (function)]
 ```
 
 $`f_{w,b}(x) = wx + b`$
