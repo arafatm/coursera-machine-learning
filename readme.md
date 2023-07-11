@@ -126,8 +126,7 @@ $$f_{w,b}(x) = wx + b$$
 $$`f_{w,b}(x) = wx + b`$$
 
 ```math
-`f_{w,b}(x) = wx + b`
-
+`f_{w,b}(x) = wx + b` \\
 `f_{w,b}(x)`
 ```
 
