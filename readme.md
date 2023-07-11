@@ -120,7 +120,6 @@ X[x (feature)] --> F
 F --> Y[ŷ (target or prediction)]
 ```
 
-
 #### Lab: Optional lab: Model representation
 #### Cost function formula
 #### Cost function intuition
