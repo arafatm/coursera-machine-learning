@@ -98,7 +98,7 @@ Which of these is a type of unsupervised learning?
 - most commonly used model
 
 e.g. Finding the right house price based on dataset of houses by sq ft.
-01.01.house.size.and.price.png
+![](img/01.01.house.size.and.price.png)
 
 | Terminology  |                                 |
 | -:           | :-                              |
@@ -123,8 +123,7 @@ B --> F[f (function)]
 - $`f(x) = wx + b`$
 
 > `Univariate` linear regression => one variable
-
-01.01.linear.regression.png
+![](img/01.01.linear.regression.png)
 
 #### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
@@ -154,7 +153,7 @@ Code
 1st step to implement linear function is to define `Cost Function`
 - $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
 
-01.01.parameters.png
+![](img/01.01.parameters.png)
 
 We can play with `w` & `b` to find the best fit line
 - _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`
@@ -170,7 +169,7 @@ $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2
 
 Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
 
-01.01.cost.function.png
+![](img/01.01.cost.function.png)
 
 #### Cost function intuition
 
