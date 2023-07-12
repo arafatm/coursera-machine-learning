@@ -131,16 +131,16 @@ Here is a summary of some of the notation you will encounter.
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
 | :--                     | :--                    | :--                                                                                                           |
-| $`a `$                  |                        | scalar, non bold                                                                                              |
-| $`\mathbf{a} `$         |                        | vector, bold                                                                                                  |
+| $`a`$                  |                        | scalar, non bold                                                                                              |
+| $`\mathbf{a}`$         |                        | vector, bold                                                                                                  |
 | **Regression**          |                        |                                                                                                               |  |
-| $`\mathbf{x} `$         | `x_train`              | Training Example feature values (in this lab - Size (1000 sqft))                                              |
-| $`\mathbf{y} `$         | `y_train`              | Training Example  targets (in this lab Price (1000s of dollars))
-| $`x^{(i)}$, $y^{(i)} `$ | `x_i`, `y_i`           | $`i_{th}`$ Training Example                                                                                      |
+| $`\mathbf{x}`$         | `x_train`              | Training Example feature values (in this lab - Size (1000 sqft))                                              |
+| $`\mathbf{y}`$         | `y_train`              | Training Example  targets (in this lab Price (1000s of dollars))
+| $`x^{(i)}$, $y^{(i)}`$ | `x_i`, `y_i`           | $`i_{th}`$ Training Example                                                                                      |
 | m                       | `m`                    | Number of training examples                                                                                   |
-| $`w `$                  | `w`                    | parameter: weight                                                                                             |
-| $`b `$                  | `b`                    | parameter: bias                                                                                               |
-| $`f_{w,b}(x^{(i)}) `$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
+| $`w`$                  | `w`                    | parameter: weight                                                                                             |
+| $`b`$                  | `b`                    | parameter: bias                                                                                               |
+| $`f_{w,b}(x^{(i)})`$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
 
 Code
 - `NumPy`, a popular library for scientific computing
@@ -150,6 +150,18 @@ Code
     - `c` for color
 
 #### Cost function formula
+
+1st step to implement linear function is to define `Cost Function`
+- $`f_{w,b}(x) = wx + b`$
+- `w` is the **slope**
+- `b` is the **y-intercept** ie where the line intersects x=0
+
+$`y>`$
+
+01.01.parameters.png
+
+
+
 #### Cost function intuition
 #### Visualizing the cost function
 #### Visualization examples
