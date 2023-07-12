@@ -126,9 +126,29 @@ B --> F[f (function)]
 
 01.01.linear.regression.png
 
-#### Lab: Optional lab: Model representation
+#### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+Here is a summary of some of the notation you will encounter.  
+
+| General <img width=70/> <br />  Notation  <img width=70/> | Description<img width=350/>                                                                             | Python (if applicable) |
+| : ------------                                            | : ------------------------------------------------------------                                          |                        |
+| $a$                                                       | scalar, non bold                                                                                        |                        |
+| $\mathbf{a}$                                              | vector, bold                                                                                            |                        |
+| **Regression**                                            |                                                                                                         |                        |  |
+| $\mathbf{x}$                                              | Training Example feature values (in this lab - Size (1000 sqft))                                        | `x_train`              |
+| $\mathbf{y}$                                              | Training Example  targets (in this lab Price (1000s of dollars))                                        | `y_train`
+| $x^{(i)}$, $y^{(i)}$                                      | $i_{th}$Training Example                                                                                | `x_i`, `y_i`           |
+| m                                                         | Number of training examples                                                                             | `m`                    |
+| $w$                                                       | parameter: weight                                                                                       | `w`                    |
+| $b$                                                       | parameter: bias                                                                                         | `b`                    |
+| $f_{w,b}(x^{(i)})$                                        | The result of the model evaluation at $x^{(i)}$ parameterized by $w,b$: $f_{w,b}(x^{(i)}) = wx^{(i)}+b$ | `f_wb`                 |
+
 #### Cost function formula
 #### Cost function intuition
 #### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
+
+<!-- vim: set textwidth=0: -->
+<!-- vim: set wrapmargin=0: -->
+<!-- vim: set nowrap: -->
+<!-- vim: set foldlevel=9: -->
