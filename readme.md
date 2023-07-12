@@ -26,6 +26,7 @@ Supervised vs Unsupervised
 | image of phone | defect? (0/1)          | visual inspection   |
 
 <img src="img/supervised.learning.regression.housing.price.prediction.png" style="margin: 1em 0em 0em 10em" />
+
 - Use different algorithms to predict price of house based on data
 
 #### Supervised Learning: Classification 
@@ -34,12 +35,15 @@ Supervised vs Unsupervised
 `Classification` **predicts categories** ie from limited possible results
 
 <img src="img/supervised.classification.breast.cancer.png" style="margin: 1em 0em 0em 10em" />
+
 - e.g. Breast cancer detection
 
 <img src="img/supervised.learning.classification.malignant.png" style="margin: 1em 0em 0em 10em" />
+
 - we can have multiple outputs
 
 <img src="img/classification.multiple.inputs.png" style="margin: 1em 0em 0em 10em" />
+
 - we can draw a boundary line to separate our output
 
 Supervised Learning
@@ -52,15 +56,18 @@ Supervised Learning
 #### Unsupervised Learning 
 
 <img src="img/unsupervised.clusturing.png" style="margin: 1em 0em 0em 10em" />
+
 - With unsupervised we don't have predetermined expected output
 - we're trying to find structure in the pattern
 - in this example it's `clustering`
 - e.g. Google News will "cluster" news related to pandas given a specific article about panda/birth/twin/zoo
 
 <img src="img/clustering.dna.microarray.png" style="margin: 1em 0em 0em 10em" />
+
 - e.g. given set of individual genes, "cluster" similar genes
 
 <img src="img/clustering.grouping.customers.png" style="margin: 1em 0em 0em 10em" />
+
 - e.g. how deeplearning.ai categorizes their learners
 
 > `Unsupervised Learning`: Data only comes with inputs x, but not output labels y. 
@@ -98,6 +105,7 @@ Which of these is a type of unsupervised learning?
 - most commonly used model
 
 <img src="img/01.01.house.size.and.price.png" style="margin: 1em 0em 0em 10em" />
+
 - e.g. Finding the right house price based on dataset of houses by sq ft.
 
 | Terminology  |                                 |
@@ -123,6 +131,7 @@ B --> F[f (function)]
 - $`f(x) = wx + b`$
 
 <img src="img/01.01.linear.regression.png" style="margin: 1em 0em 0em 10em" />
+
 - `Univariate` linear regression => one variable
 
 #### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
@@ -151,9 +160,11 @@ Code
 #### Cost function formula
 
 <img src="img/01.01.parameters.png" style="margin: 1em 0em 0em 10em" />
+
 - We can play with `w` & `b` to find the best fit line
 
 <img src="img/01.01.cost.function.png" style="margin: 1em 0em 0em 10em" />
+
 - 1st step to implement linear function is to define `Cost Function`
 - $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
 - `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
@@ -171,6 +182,10 @@ Code
 #### Visualization examples
 #### Lab: Optional lab: Cost function
 <!-- vim: set textwidth=0: -->
+
 <!-- vim: set wrapmargin=0: -->
+
 <!-- vim: set nowrap: -->
+
 <!-- vim: set foldlevel=9: -->
+
