@@ -152,19 +152,21 @@ Code
 #### Cost function formula
 
 1st step to implement linear function is to define `Cost Function`
-- $`f_{w,b}(x) = wx + b`$
-- `w` is the **slope**
-- `b` is the **y-intercept** ie where the line intersects x=0
+- $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
 
 01.01.parameters.png
 
 We can play with `w` & `b` to find the best fit line
-- $`\hat{y}`$
-- _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`  to measure the __error__ 
-  - $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$
-  - $`\sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})^2`$
+- _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`
+- Given __error__ = $`\hat{y} - y`$ 
+- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ where `m` is the number of training examples
+- Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+
+    $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
 
 #### Cost function intuition
+
+- $`\sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})^2`$
 #### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
