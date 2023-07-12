@@ -163,7 +163,6 @@ We can play with `w` & `b` to find the best fit line
 - Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
 
 Also known as __squared error cost function__ 
-
 $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
 
 Which can be rewritten as 
