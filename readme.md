@@ -161,7 +161,7 @@ Code
 We can play with `w` & `b` to find the best fit line
 - $`\hat{y}`$
 - _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`  to measure the __error__ 
-  - $`\sum_{i=1}^{m} (\hat{y}^{(i) - y^i})^2`$
+  - $`\sum_{i=1}^{m} (\hat{y}^{(i) - y^(i)})^{2}`$
 
 #### Cost function intuition
 #### Visualizing the cost function
