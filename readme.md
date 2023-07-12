@@ -156,7 +156,7 @@ Code
 - `w` is the **slope**
 - `b` is the **y-intercept** ie where the line intersects x=0
 
-$`y^`$
+$`\hat{y}`$
 
 01.01.parameters.png
 
