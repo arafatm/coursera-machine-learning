@@ -166,18 +166,25 @@ Code
 <img src="img/01.01.cost.function.png" style="margin: 1em 0em 0em 10em" />
 
 - 1st step to implement linear function is to define `Cost Function`
-  $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the
-  __y-intercept__ 
+-  Given $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
 - `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
-- Given `error` = $`\hat{y} - y`$ 
-- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ where `m` is the number of training examples
+- ie `error` = $`\hat{y} - y`$ 
+- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+  - where `m` is the number of training examples
 - Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
 - Also known as `squared error cost function` $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
 - Which can be rewritten as $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
 - Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
 
+##### Question
 
-#### Cost function intuition
+Which of these parameters of the model that can be adjusted?
+- $`w`$ and $`b`$
+- $`f_{w,b}`$
+- $`w`$ only, because we should choose $`b = 0`$
+- $`\hat{y}`$
+
+#### Cost Function Intuition
 
 #### Visualizing the cost function
 #### Visualization examples
