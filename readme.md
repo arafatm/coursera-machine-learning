@@ -1,4 +1,4 @@
-#![](img/ [Machine Learning | Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
+# [Machine Learning | Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
 
 - [Discourse  - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
 
