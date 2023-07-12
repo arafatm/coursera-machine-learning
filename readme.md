@@ -25,7 +25,7 @@ Supervised vs Unsupervised
 | image, radar   | position of other cars | self-driving car    |
 | image of phone | defect? (0/1)          | visual inspection   |
 
-![](img/supervised.learning.regression.housing.price.prediction.png)
+<img src="img/supervised.learning.regression.housing.price.prediction.png" style="margin: 1em 0em 0em 10em" />
 - Use different algorithms to predict price of house based on data
 
 #### Supervised Learning: Classification 
@@ -33,13 +33,13 @@ Supervised vs Unsupervised
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
 
-![](img/supervised.classification.breast.cancer.png)
+<img src="img/supervised.classification.breast.cancer.png" style="margin: 1em 0em 0em 10em" />
 - e.g. Breast cancer detection
 
-![](img/supervised.learning.classification.malignant.png)
+<img src="img/supervised.learning.classification.malignant.png" style="margin: 1em 0em 0em 10em" />
 - we can have multiple outputs
 
-![](img/classification.multiple.inputs.png)
+<img src="img/classification.multiple.inputs.png" style="margin: 1em 0em 0em 10em" />
 - we can draw a boundary line to separate our output
 
 Supervised Learning
@@ -51,16 +51,16 @@ Supervised Learning
 
 #### Unsupervised Learning 
 
-![](img/unsupervised.clusturing.png)
+<img src="img/unsupervised.clusturing.png" style="margin: 1em 0em 0em 10em" />
 - With unsupervised we don't have predetermined expected output
 - we're trying to find structure in the pattern
 - in this example it's `clustering`
 - e.g. Google News will "cluster" news related to pandas given a specific article about panda/birth/twin/zoo
 
-![](img/clustering.dna.microarray.png)
+<img src="img/clustering.dna.microarray.png" style="margin: 1em 0em 0em 10em" />
 - e.g. given set of individual genes, "cluster" similar genes
 
-![](img/clustering.grouping.customers.png)
+<img src="img/clustering.grouping.customers.png" style="margin: 1em 0em 0em 10em" />
 - e.g. how deeplearning.ai categorizes their learners
 
 > `Unsupervised Learning`: Data only comes with inputs x, but not output labels y. 
@@ -97,7 +97,7 @@ Which of these is a type of unsupervised learning?
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
 - most commonly used model
 
-![](img/01.01.house.size.and.price.png)
+<img src="img/01.01.house.size.and.price.png" style="margin: 1em 0em 0em 10em" />
 - e.g. Finding the right house price based on dataset of houses by sq ft.
 
 | Terminology  |                                 |
@@ -122,7 +122,7 @@ B --> F[f (function)]
 - $`f_{w,b}(x) = wx + b`$ is equivalent to 
 - $`f(x) = wx + b`$
 
-![](img/01.01.linear.regression.png)
+<img src="img/01.01.linear.regression.png" style="margin: 1em 0em 0em 10em" />
 - `Univariate` linear regression => one variable
 
 #### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
@@ -150,10 +150,10 @@ Code
 
 #### Cost function formula
 
-![](img/01.01.parameters.png)
+<img src="img/01.01.parameters.png" style="margin: 1em 0em 0em 10em" />
 - We can play with `w` & `b` to find the best fit line
 
-![](img/01.01.cost.function.png)
+<img src="img/01.01.cost.function.png" style="margin: 1em 0em 0em 10em" />
 - 1st step to implement linear function is to define `Cost Function`
 - $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
 - `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
