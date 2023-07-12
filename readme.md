@@ -156,17 +156,17 @@ Code
 - `w` is the **slope**
 - `b` is the **y-intercept** ie where the line intersects x=0
 
-$`\hat{y}`$
-
 01.01.parameters.png
 
-
+We can play with `w` & `b` to find the best fit line
+- $`\hat{y}`$
+- _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`  to measure the __error__ 
+  - $`\sum_{i=1}^{m} (\hat{y}^{(i) - y^{(i))^2`$
 
 #### Cost function intuition
 #### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
-
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
