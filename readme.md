@@ -25,22 +25,22 @@ Supervised vs Unsupervised
 | image, radar   | position of other cars | self-driving car    |
 | image of phone | defect? (0/1)          | visual inspection   |
 
-Use different algorithms to predict price of house based on data
 ![](img/supervised.learning.regression.housing.price.prediction.png)
+- Use different algorithms to predict price of house based on data
 
 #### Supervised Learning: Classification 
 
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
 
-e.g. Breast cancer detection
 ![](img/supervised.classification.breast.cancer.png)
+- e.g. Breast cancer detection
 
-we can have multiple outputs
 ![](img/supervised.learning.classification.malignant.png)
+- we can have multiple outputs
 
-we can draw a boundary line to separate our output
 ![](img/classification.multiple.inputs.png)
+- we can draw a boundary line to separate our output
 
 Supervised Learning
 
@@ -51,17 +51,17 @@ Supervised Learning
 
 #### Unsupervised Learning 
 
-With unsupervised we don't have predetermined expected output
+![](img/unsupervised.clusturing.png)
+- With unsupervised we don't have predetermined expected output
 - we're trying to find structure in the pattern
 - in this example it's `clustering`
 - e.g. Google News will "cluster" news related to pandas given a specific article about panda/birth/twin/zoo
-![](img/unsupervised.clusturing.png)
 
-e.g. given set of individual genes, "cluster" similar genes
 ![](img/clustering.dna.microarray.png)
+- e.g. given set of individual genes, "cluster" similar genes
 
-e.g. how deeplearning.ai categorizes their learners
 ![](img/clustering.grouping.customers.png)
+- e.g. how deeplearning.ai categorizes their learners
 
 > `Unsupervised Learning`: Data only comes with inputs x, but not output labels y. 
 > Algorithm has to find _structure_ in the data  
@@ -94,11 +94,11 @@ Which of these is a type of unsupervised learning?
 
 #### Linear regression model part 1
 
-> `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
+`Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
 - most commonly used model
 
-e.g. Finding the right house price based on dataset of houses by sq ft.
 ![](img/01.01.house.size.and.price.png)
+- e.g. Finding the right house price based on dataset of houses by sq ft.
 
 | Terminology  |                                 |
 | -:           | :-                              |
@@ -122,8 +122,8 @@ B --> F[f (function)]
 - $`f_{w,b}(x) = wx + b`$ is equivalent to 
 - $`f(x) = wx + b`$
 
-> `Univariate` linear regression => one variable
 ![](img/01.01.linear.regression.png)
+- `Univariate` linear regression => one variable
 
 #### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
@@ -150,26 +150,20 @@ Code
 
 #### Cost function formula
 
-1st step to implement linear function is to define `Cost Function`
-- $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
-
 ![](img/01.01.parameters.png)
-
-We can play with `w` & `b` to find the best fit line
-- _Cost function_ takes  predicted $`\hat{y}`$ and compares to `y`
-- Given __error__ = $`\hat{y} - y`$ 
-- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ where `m` is the number of training examples
-- Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
-
-Also known as __squared error cost function__ 
-$`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
-
-Which can be rewritten as 
-$`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
-
-Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
+- We can play with `w` & `b` to find the best fit line
 
 ![](img/01.01.cost.function.png)
+- 1st step to implement linear function is to define `Cost Function`
+- $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
+- `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
+- Given `error` = $`\hat{y} - y`$ 
+- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ where `m` is the number of training examples
+- Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+- Also known as __squared error cost function__ $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+- Which can be rewritten as $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
+- Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
+
 
 #### Cost function intuition
 
