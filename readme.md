@@ -164,11 +164,13 @@ We can play with `w` & `b` to find the best fit line
 
 Also known as __squared error cost function__ 
 
-$`J_{(w,b)}\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+$`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+
+Which can be rewritten as 
+$`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
 
 #### Cost function intuition
 
-- $`\sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})^2`$
 #### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
