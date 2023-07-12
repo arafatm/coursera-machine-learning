@@ -130,7 +130,7 @@ B --> F[f (function)]
 Here is a summary of some of the notation you will encounter.  
 
 | General Notation        | Description                                                                                             | Python (if applicable) |
-| : ------------          | : ------------------------------------------------------------                                          |                        |
+| :--                     | :--                                                                                                     | :--                    |
 | $`a `$                  | scalar, non bold                                                                                        |                        |
 | $`\mathbf{a} `$         | vector, bold                                                                                            |                        |
 | **Regression**          |                                                                                                         |                        |  |
