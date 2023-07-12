@@ -129,18 +129,25 @@ B --> F[f (function)]
 #### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
 
-| General Notation        | Description                                                                                             | Python (if applicable) |
-| :--                     | :--                                                                                                     | :--                    |
-| $`a `$                  | scalar, non bold                                                                                        |                        |
-| $`\mathbf{a} `$         | vector, bold                                                                                            |                        |
-| **Regression**          |                                                                                                         |                        |  |
-| $`\mathbf{x} `$         | Training Example feature values (in this lab - Size (1000 sqft))                                        | `x_train`              |
-| $`\mathbf{y} `$         | Training Example  targets (in this lab Price (1000s of dollars))                                        | `y_train`
-| $`x^{(i)}$, $y^{(i)} `$ | $i_{th}$Training Example                                                                                | `x_i`, `y_i`           |
-| m                       | Number of training examples                                                                             | `m`                    |
-| $`w `$                  | parameter: weight                                                                                       | `w`                    |
-| $`b `$                  | parameter: bias                                                                                         | `b`                    |
-| $`f_{w,b}(x^{(i)}) `$   | The result of the model evaluation at $x^{(i)}$ parameterized by $w,b$: $f_{w,b}(x^{(i)}) = wx^{(i)}+b$ | `f_wb`                 |
+| General Notation        | Python (if applicable) | Description                                                                                                   |
+| :--                     | :--                    | :--                                                                                                           |
+| $`a `$                  |                        | scalar, non bold                                                                                              |
+| $`\mathbf{a} `$         |                        | vector, bold                                                                                                  |
+| **Regression**          |                        |                                                                                                               |  |
+| $`\mathbf{x} `$         | `x_train`              | Training Example feature values (in this lab - Size (1000 sqft))                                              |
+| $`\mathbf{y} `$         | `y_train`              | Training Example  targets (in this lab Price (1000s of dollars))
+| $`x^{(i)}$, $y^{(i)} `$ | `x_i`, `y_i`           | $`i_{th}`$ Training Example                                                                                      |
+| m                       | `m`                    | Number of training examples                                                                                   |
+| $`w `$                  | `w`                    | parameter: weight                                                                                             |
+| $`b `$                  | `b`                    | parameter: bias                                                                                               |
+| $`f_{w,b}(x^{(i)}) `$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
+
+Code
+- `NumPy`, a popular library for scientific computing
+- `Matplotlib`, a popular library for plotting data
+  - `scatter()` to plot on a graph
+    - `marker` for symbol to use
+    - `c` for color
 
 #### Cost function formula
 #### Cost function intuition
