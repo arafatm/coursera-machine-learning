@@ -213,7 +213,7 @@ the 2nd graph shows that when $`w = 0`$ then $`J(0) ~= 2.33`$
 - We can plot various values for `w` and get a graph (on the right)
 - As we can see the cost function with $`w = 1`$ is the best fit line for __this data__
 
-> The goal of linear regression is to minimize $`J_{(w,b)}`$
+> :horn: The goal of linear regression is to minimize $`J_{(w,b)}`$
 
 #### Visualization examples
 #### Lab: Optional lab: Cost function
