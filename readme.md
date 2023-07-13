@@ -242,9 +242,24 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
 
 #### Visualization examples
+
+Here are some examples of `J`
+
+![](img/01.01.06.bad.png)
+- We can see this is a pretty bad `J`
+
+![](img/01.01.06.less.bad.png)
+- A little less bad `J`
+
+![](img/01.01.06.good.png)
+- This is pretty good and close to minimal (but not quite perfect)
+
+In the next lab, you can click on different points on the contour to view the cost function on the graph
+
+> __Gradient Descent__ is an algorithm to train linear regression and other complex models 
+
 #### Lab: Optional lab: Cost function
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
 <!-- vim: set foldlevel=9: -->
-
