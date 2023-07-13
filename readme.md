@@ -215,6 +215,32 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 > allows us to minimize $`J_{(w,b)}`$
 
 #### Visualizing the cost function
+
+|               |                                                                                     |
+| --            | --                                                                                  |
+| model         | $`f_{w,b}(x) = wx + b`                                                              |
+| parameters    | $`w`$, $`b`$                                                                        |
+| cost function | $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ |
+| goal          | minimize $`J_{(w,b)}`$                                                              |
+
+01.01.05.J.w.png
+- When we only have w, then we can plot `J` vs `w` in 2-dimensions
+
+01.01.05.soup.bowl.png
+- However, when we add `b` then it's 3-dimensional
+- The value of `J` is the height
+
+01.01.05.contour.plot.png
+- this is easier to visualize as a __contour plot__
+
+01.01.05.mount.fuji.png
+- Same as used to visualize height of mountains
+
+01.01.05.contour.visualize.png
+- take a horizontal slice which gives you the same `J` for given `w,b`
+- the center of the contour is the minimum
+- __Countour__ allows us to visualize the 3-D `J` in 2-D
+
 #### Visualization examples
 #### Lab: Optional lab: Cost function
 <!-- vim: set textwidth=0: -->
