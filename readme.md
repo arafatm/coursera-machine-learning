@@ -194,16 +194,16 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 #### Visualizing the cost function
 
 ![img/01.01.04.simplified.png](img/01.01.04.simplified.png)
-we can use simplified function to find the best fit line 
+- we can use simplified function to find the best fit line 
 
 ![img/01.01.04.w.is.1.png](img/01.01.04.w.is.1.png)
-the 2nd graph shows that when $`w = 1`$ then $`J(1) = 0`$
+- the 2nd graph shows that when $`w = 1`$ then $`J(1) = 0`$
 
 ![img/01.01.04.w.is.0.5.png](img/01.01.04.w.is.0.5.png)
-the 2nd graph shows that when $`w = 0.5`$ then $`J(0.5) ~= 0.58`$
+- the 2nd graph shows that when $`w = 0.5`$ then $`J(0.5) ~= 0.58`$
 
 ![img/01.01.04.w.is.0.png](img/01.01.04.w.is.0.png)
-the 2nd graph shows that when $`w = 0`$ then $`J(0) ~= 2.33`$
+- the 2nd graph shows that when $`w = 0`$ then $`J(0) ~= 2.33`$
 
 ![img/01.01.04.negative.w.png](img/01.01.04.negative.w.png)
 - We can do this calculation for various $`w`$ even negative numbers
