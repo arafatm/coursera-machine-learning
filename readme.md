@@ -261,7 +261,22 @@ In the next lab, you can click on different points on the contour to view the co
 #### [Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
+- `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
+#### Quiz
+
+1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
+- [ ] $`m`$
+- [ ] $`w`$ and $`b`$
+- [ ] $`(x,y)`$
+- [ ] $`x`$
+
+2. For linear regression, if you find parameters $`w`$ and $`b`$ so that $`J_{(w,b)}`$ is very close to zero, what can you conclude?
+- [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really well
+- [ ] This is never possible. There must be a bug in the code
+- [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really poorly
+
+<details><summary>4, 1</summary></details>
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
