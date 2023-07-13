@@ -260,7 +260,7 @@ In the next lab, you can click on different points on the contour to view the co
 
 #### [Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
-[Lab: Cost Function](C1_W1_Lab03_Cost_function_Soln.ipynb)
+[Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 
 
 <!-- vim: set textwidth=0: -->
