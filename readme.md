@@ -191,8 +191,6 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 | cost function | $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ | $`J_{(w)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w}(x^{(i)}) - y^{(i)})^{2}`$ |
 | goal          | we want to minimize $`J_{(w,b)}`$                                                   | we want to minimize $`J_{(w)}`$                                                   |
 
-#### Visualizing the cost function
-
 ![](img/01.01.04.simplified.png)
 we can use simplified function to find the best fit line 
 
@@ -215,6 +213,7 @@ the 2nd graph shows that when $`w = 0`$ then $`J(0) ~= 2.33`$
 
 > :horn: The goal of linear regression is to minimize $`J_{(w,b)}`$
 
+#### Visualizing the cost function
 #### Visualization examples
 #### Lab: Optional lab: Cost function
 <!-- vim: set textwidth=0: -->
