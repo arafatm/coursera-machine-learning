@@ -211,7 +211,8 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 - We can plot various values for `w` and get a graph (on the right)
 - As we can see the cost function with $`w = 1`$ is the best fit line for __this data__
 
-> :bulb: The goal of linear regression is to minimize $`J_{(w,b)}`$
+> :bulb: The goal of linear regression is to find the values of $`w,b`$ that
+> allows us to minimize $`J_{(w,b)}`$
 
 #### Visualizing the cost function
 #### Visualization examples
