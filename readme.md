@@ -365,7 +365,7 @@ regression but also in advanced neural network models
 
 
 ```math
-repeat until convergence {
+repeat until convergence {\\
   w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
   b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 }
