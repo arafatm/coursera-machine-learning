@@ -13,19 +13,19 @@
       * [1.1.1.3 Supervised Learning: Classification](#1113-supervised-learning-classification)
       * [1.1.1.4 Unsupervised Learning](#1114-unsupervised-learning)
         * [Question: Of the following examples, which would you address using an unsupervised learning algorithm?](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm)
-      * [1.1.1.5 Lab: Python and Jupyter Notebooks](#1115-lab-python-and-jupyter-notebooks)
-      * [1.1.1.6 Quiz: Supervised vs Unsupervised Learning](#1116-quiz-supervised-vs-unsupervised-learning)
+      * [Lab: Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
+      * [Quiz: Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
     * [1.1.2 Regression Model](#112-regression-model)
       * [1.1.2.1 Linear regression model part 1](#1121-linear-regression-model-part-1)
       * [1.1.2.2 Linear regression model part 2](#1122-linear-regression-model-part-2)
-      * [1.1.2.3 Lab: Model representation](#1123-lab-model-representation)
+      * [Lab: Model representation](#lab-model-representation)
       * [1.1.2.4 Cost function formula](#1124-cost-function-formula)
         * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
       * [1.1.2.5 Cost Function Intuition](#1125-cost-function-intuition)
       * [1.1.2.6 Visualizing the cost function](#1126-visualizing-the-cost-function)
       * [1.1.2.7 Visualization examples](#1127-visualization-examples)
-      * [1.1.2.8 Lab: Cost function](#1128-lab-cost-function)
-      * [1.1.2.9 Quiz: Regression Model](#1129-quiz-regression-model)
+      * [Lab: Cost function](#lab-cost-function)
+      * [Quiz: Regression Model](#quiz-regression-model)
     * [1.1.3 Train the model with gradient descent](#113-train-the-model-with-gradient-descent)
       * [1.1.3.1 Gradient descent](#1131-gradient-descent)
       * [1.1.3.2 Implementing gradient descent](#1132-implementing-gradient-descent)
@@ -33,7 +33,7 @@
       * [1.1.3.4 Learning rate](#1134-learning-rate)
       * [1.1.3.5 Gradient descent for linear regression](#1135-gradient-descent-for-linear-regression)
       * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
-      * [1.1.3.7 Lab: Gradient descent](#1137-lab-gradient-descent)
+      * [Lab: Gradient descent](#lab-gradient-descent)
 
 <!-- vim-markdown-toc -->
 
@@ -121,11 +121,11 @@ Supervised Learning
 - [ ] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-##### 1.1.1.5 Lab: Python and Jupyter Notebooks
+##### Lab: Python and Jupyter Notebooks
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
-##### 1.1.1.6 Quiz: Supervised vs Unsupervised Learning
+##### Quiz: Supervised vs Unsupervised Learning
 
 Which are the two common types of supervised learning (choose two)
 - [ ] Classificaiton
@@ -174,7 +174,8 @@ B --> F[f (function)]
 
 - `Univariate` linear regression => one variable
 
-##### 1.1.2.3 [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+##### [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+
 Here is a summary of some of the notation you will encounter.  
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
@@ -298,12 +299,12 @@ In the next lab, you can click on different points on the contour to view the co
 
 > __Gradient Descent__ is an algorithm to train linear regression and other complex models 
 
-##### 1.1.2.8 [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+##### [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
-##### 1.1.2.9 Quiz: Regression Model
+##### Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
 - [ ] $`m`$
@@ -364,7 +365,7 @@ regression but also in advanced neural network models
 ##### 1.1.3.4 Learning rate
 ##### 1.1.3.5 Gradient descent for linear regression
 ##### 1.1.3.6 Running gradient descent
-##### 1.1.3.7 Lab: Gradient descent
+##### Lab: Gradient descent
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
