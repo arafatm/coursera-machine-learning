@@ -323,12 +323,12 @@ smallest $`J`$
 __Gradient Descent__ is an algorithm used for any function, not just in linear
 regression but also in advanced neural network models
 
-1.1.3.1.algorithm.png
+![](1.1.3.1.algorithm.png)
 - start with some $`w,b`$ e.g. $`(0,0)`$
 - keep changing $`w,b`$ to reduce $`J(w,b)`$
 - until we settle at or near a minimume
 
-1.1.3.1.local.minima.png
+![](1.1.3.1.local.minima.png)
 - Example of a more comples $`J`$
 - not a squared error cost
 - not linear regression
@@ -342,7 +342,18 @@ regression but also in advanced neural network models
 
 ##### Implementing gradient descent
 
-$`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+![](1.1.3.2.algorithm.png)
+- The __Gradient Descent__ algorithm
+- $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+  - $`\alpha`$ == __learning rate__. ie How "big a step" you take down the hill
+  - $`\frac{\partial}{\partial w} J_{(w,b)}`$ == __derivative__. ie which direction
+- $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+- We repeat these 2 steps for $`w,b`$ until the algorithm __converges__
+  - ie each subsequent step doesn't change the value
+- We want to _simultaneously_ update w and b at each step
+  - $`tmp_w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+  - $`tmp_b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - $`w = tmp_w && b = tmp_b`$
 
 ##### Gradient descent intuition
 ##### Learning rate
