@@ -357,8 +357,8 @@ regression but also in advanced neural network models
 - We repeat these 2 steps for $`w,b`$ until the algorithm __converges__
   - ie each subsequent step doesn't change the value
 - We want to _simultaneously_ update w and b at each step
-  - $`tmp_w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - $`tmp_b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - `tmp_w =` $`w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+  - `tmp_b =` $`$b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
   - `w = tmp_w && b = tmp_b`
 
 ##### 1.1.3.3 Gradient descent intuition
@@ -366,7 +366,6 @@ regression but also in advanced neural network models
 ##### 1.1.3.5 Gradient descent for linear regression
 ##### 1.1.3.6 Running gradient descent
 ##### Lab: Gradient descent
-
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
