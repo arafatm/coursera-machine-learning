@@ -17,15 +17,15 @@
       * [1.1.1.6 Quiz: Supervised vs Unsupervised Learning](#1116-quiz-supervised-vs-unsupervised-learning)
     * [1.1.2 Regression Model](#112-regression-model)
       * [1.1.2.1 Linear regression model part 1](#1121-linear-regression-model-part-1)
-      * [1.1.2.1 Linear regression model part 2](#1121-linear-regression-model-part-2)
-      * [1.1.2.2 Lab: Model representation](#1122-lab-model-representation)
-      * [1.1.2.3 Cost function formula](#1123-cost-function-formula)
+      * [1.1.2.2 Linear regression model part 2](#1122-linear-regression-model-part-2)
+      * [1.1.2.3 Lab: Model representation](#1123-lab-model-representation)
+      * [1.1.2.4 Cost function formula](#1124-cost-function-formula)
         * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
-      * [1.1.2.4 Cost Function Intuition](#1124-cost-function-intuition)
-      * [1.1.2.5 Visualizing the cost function](#1125-visualizing-the-cost-function)
-      * [1.1.2.6 Visualization examples](#1126-visualization-examples)
-      * [1.1.2.7 Lab: Cost function](#1127-lab-cost-function)
-      * [1.1.2.8 Quiz: Regression Model](#1128-quiz-regression-model)
+      * [1.1.2.5 Cost Function Intuition](#1125-cost-function-intuition)
+      * [1.1.2.6 Visualizing the cost function](#1126-visualizing-the-cost-function)
+      * [1.1.2.7 Visualization examples](#1127-visualization-examples)
+      * [1.1.2.8 Lab: Cost function](#1128-lab-cost-function)
+      * [1.1.2.9 Quiz: Regression Model](#1129-quiz-regression-model)
     * [1.1.3 Train the model with gradient descent](#113-train-the-model-with-gradient-descent)
       * [1.1.3.1 Gradient descent](#1131-gradient-descent)
       * [1.1.3.2 Implementing gradient descent](#1132-implementing-gradient-descent)
@@ -157,7 +157,7 @@ Which of these is a type of unsupervised learning?
 | (x,y)        | single training example
 | (xⁱ,yⁱ)      | i-th training example
 
-##### 1.1.2.1 Linear regression model part 2
+##### 1.1.2.2 Linear regression model part 2
 
 ```mermaid
 flowchart TD
@@ -174,7 +174,7 @@ B --> F[f (function)]
 
 - `Univariate` linear regression => one variable
 
-##### 1.1.2.2 [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+##### 1.1.2.3 [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
@@ -197,7 +197,7 @@ Code
     - `marker` for symbol to use
     - `c` for color
 
-##### 1.1.2.3 Cost function formula
+##### 1.1.2.4 Cost function formula
 
 ![img/01.01.parameters.png](img/01.01.parameters.png)
 - We can play with `w` & `b` to find the best fit line
@@ -220,7 +220,7 @@ Code
 - $`w`$ only, because we should choose $`b = 0`$
 - $`\hat{y}`$
 
-##### 1.1.2.4 Cost Function Intuition
+##### 1.1.2.5 Cost Function Intuition
 
 To get a sense of how to minimize $`J`$ we can use a simplified model
 
@@ -254,7 +254,7 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 > :bulb: The goal of linear regression is to find the values of $`w,b`$ that
 > allows us to minimize $`J_{(w,b)}`$
 x
-##### 1.1.2.5 Visualizing the cost function
+##### 1.1.2.6 Visualizing the cost function
 
 |               |                                                                                     |
 | --            | --                                                                                  |
@@ -281,7 +281,7 @@ x
 - the center of the contour is the minimum
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
 
-##### 1.1.2.6 Visualization examples
+##### 1.1.2.7 Visualization examples
 
 Here are some examples of `J`
 
@@ -298,12 +298,12 @@ In the next lab, you can click on different points on the contour to view the co
 
 > __Gradient Descent__ is an algorithm to train linear regression and other complex models 
 
-##### 1.1.2.7 [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+##### 1.1.2.8 [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
-##### 1.1.2.8 Quiz: Regression Model
+##### 1.1.2.9 Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
 - [ ] $`m`$
