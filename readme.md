@@ -38,6 +38,7 @@
 ### Introduction to Machine Learning
 
 #### Supervised vs Unsuperverside Machine Learning
+
 ##### What is machine learning?
 
 > Field of study that gives computers the ability learn without being explicitly pogrammed -- Arthur Samuel
@@ -132,6 +133,7 @@ Which of these is a type of unsupervised learning?
 - [ ] Classification
 
 #### Regression Model
+
 ##### Linear regression model part 1
 
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
@@ -312,6 +314,7 @@ In the next lab, you can click on different points on the contour to view the co
 <details><summary>Ans</summary>4, 1</details>
 
 #### Train the model with gradient descent
+
 ##### Gradient descent
 
 Want a systematic way to find values of $`w,b`$ that allows us to easily find
@@ -338,6 +341,9 @@ regression but also in advanced neural network models
 > `local minima` may not be the true lowest point
 
 ##### Implementing gradient descent
+
+$`w = w - \alpha \frac{\partial}{\partial w}`$
+
 ##### Gradient descent intuition
 ##### Learning rate
 ##### Gradient descent for linear regression
