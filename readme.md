@@ -365,12 +365,10 @@ regression but also in advanced neural network models
 
 
 ```math
-\text{repeat until convergence \{} \\
-  $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  \\
-  $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
-  \\
-\text{\}}
+repeat until convergence {
+  w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+}
 ```
 
 ##### 1.1.3.4 Learning rate
