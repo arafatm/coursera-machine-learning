@@ -342,7 +342,7 @@ regression but also in advanced neural network models
 
 ##### Implementing gradient descent
 
-$`w = w - \alpha \frac{\partial}{\partial w}`$
+$`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
 
 ##### Gradient descent intuition
 ##### Learning rate
