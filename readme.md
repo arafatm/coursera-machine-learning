@@ -5,50 +5,51 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [Supervised Machine Learning: Regression and Classification](#supervised-machine-learning-regression-and-classification)
-  * [Introduction to Machine Learning](#introduction-to-machine-learning)
-    * [Supervised vs Unsuperverside Machine Learning](#supervised-vs-unsuperverside-machine-learning)
-      * [What is machine learning?](#what-is-machine-learning)
-      * [Supervised Learning: Regression Algorithms](#supervised-learning-regression-algorithms)
-      * [Supervised Learning: Classification](#supervised-learning-classification)
-      * [Unsupervised Learning](#unsupervised-learning)
-      * [**Lab:** Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
-      * [**Quiz:** Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
-    * [Regression Model](#regression-model)
-      * [Linear regression model part 1](#linear-regression-model-part-1)
-      * [Linear regression model part 2](#linear-regression-model-part-2)
-      * [Lab: Optional lab: Model representation](#lab-optional-lab-model-representation)
-      * [Cost function formula](#cost-function-formula)
+* [C1 Supervised Machine Learning: Regression and Classification](#c1-supervised-machine-learning-regression-and-classification)
+  * [W1 Introduction to Machine Learning](#w1-introduction-to-machine-learning)
+    * [1.1.1 Supervised vs Unsuperverside Machine Learning](#111-supervised-vs-unsuperverside-machine-learning)
+      * [1.1.1.1 What is machine learning?](#1111-what-is-machine-learning)
+      * [1.1.1.2 Supervised Learning: Regression Algorithms](#1112-supervised-learning-regression-algorithms)
+      * [1.1.1.3 Supervised Learning: Classification](#1113-supervised-learning-classification)
+      * [1.1.1.4 Unsupervised Learning](#1114-unsupervised-learning)
+        * [Question: Of the following examples, which would you address using an unsupervised learning algorithm?](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm)
+      * [1.1.1.5 Lab: Python and Jupyter Notebooks](#1115-lab-python-and-jupyter-notebooks)
+      * [1.1.1.6 Quiz: Supervised vs Unsupervised Learning](#1116-quiz-supervised-vs-unsupervised-learning)
+    * [1.1.2 Regression Model](#112-regression-model)
+      * [1.1.2.1 Linear regression model part 1](#1121-linear-regression-model-part-1)
+      * [1.1.2.1 Linear regression model part 2](#1121-linear-regression-model-part-2)
+      * [1.1.2.2 Lab: Model representation](#1122-lab-model-representation)
+      * [1.1.2.3 Cost function formula](#1123-cost-function-formula)
         * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
-      * [Cost Function Intuition](#cost-function-intuition)
-      * [Visualizing the cost function](#visualizing-the-cost-function)
-      * [Visualization examples](#visualization-examples)
-      * [Lab: Optional lab: Cost function](#lab-optional-lab-cost-function)
-      * [Quiz: Regression Model](#quiz-regression-model)
-    * [Train the model with gradient descent](#train-the-model-with-gradient-descent)
-      * [Gradient descent](#gradient-descent)
-      * [Implementing gradient descent](#implementing-gradient-descent)
-      * [Gradient descent intuition](#gradient-descent-intuition)
-      * [Learning rate](#learning-rate)
-      * [Gradient descent for linear regression](#gradient-descent-for-linear-regression)
-      * [Running gradient descent](#running-gradient-descent)
-      * [Optional lab: Gradient descent](#optional-lab-gradient-descent)
+      * [1.1.2.4 Cost Function Intuition](#1124-cost-function-intuition)
+      * [1.1.2.5 Visualizing the cost function](#1125-visualizing-the-cost-function)
+      * [1.1.2.6 Visualization examples](#1126-visualization-examples)
+      * [1.1.2.7 Lab: Cost function](#1127-lab-cost-function)
+      * [1.1.2.8 Quiz: Regression Model](#1128-quiz-regression-model)
+    * [1.1.3 Train the model with gradient descent](#113-train-the-model-with-gradient-descent)
+      * [1.1.3.1 Gradient descent](#1131-gradient-descent)
+      * [1.1.3.2 Implementing gradient descent](#1132-implementing-gradient-descent)
+      * [1.1.3.3 Gradient descent intuition](#1133-gradient-descent-intuition)
+      * [1.1.3.4 Learning rate](#1134-learning-rate)
+      * [1.1.3.5 Gradient descent for linear regression](#1135-gradient-descent-for-linear-regression)
+      * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
+      * [1.1.3.7 Lab: Gradient descent](#1137-lab-gradient-descent)
 
 <!-- vim-markdown-toc -->
 
-## [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
+## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
-### Introduction to Machine Learning
+### W1 Introduction to Machine Learning
 
-#### Supervised vs Unsuperverside Machine Learning
+#### 1.1.1 Supervised vs Unsuperverside Machine Learning
 
-##### What is machine learning?
+##### 1.1.1.1 What is machine learning?
 
 > Field of study that gives computers the ability learn without being explicitly pogrammed -- Arthur Samuel
 
 Supervised vs Unsupervised
 
-##### Supervised Learning: Regression Algorithms 
+##### 1.1.1.2 Supervised Learning: Regression Algorithms 
 
 > learn x to y or input to output mappings
 
@@ -65,7 +66,7 @@ Supervised vs Unsupervised
 
 - Use different algorithms to predict price of house based on data
 
-##### Supervised Learning: Classification 
+##### 1.1.1.3 Supervised Learning: Classification 
 
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
@@ -89,7 +90,7 @@ Supervised Learning
 | Predicts | numbers    | categories     |
 | Outputs  | infinite   | limited        |
 
-##### Unsupervised Learning 
+##### 1.1.1.4 Unsupervised Learning 
 
 ![img/unsupervised.clusturing.png](img/unsupervised.clusturing.png)
 
@@ -112,18 +113,19 @@ Supervised Learning
 > - `Anomaly Detection`: Find unusual data points
 > - `Dimensionality Reduction`: Compress data using fewer numbers
 
-####### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)
+###### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  
 
+(Check all that apply.)
 - [ ] Given a set of news articles found on the web, group them into sets of articles about the same stories.
 - [ ] Given email labeled as spam/not spam, learn a spam filter.
 - [ ] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-##### **Lab:** Python and Jupyter Notebooks
+##### 1.1.1.5 Lab: Python and Jupyter Notebooks
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
-##### **Quiz:** Supervised vs Unsupervised Learning
+##### 1.1.1.6 Quiz: Supervised vs Unsupervised Learning
 
 Which are the two common types of supervised learning (choose two)
 - [ ] Classificaiton
@@ -135,9 +137,9 @@ Which of these is a type of unsupervised learning?
 - [ ] Regression
 - [ ] Classification
 
-#### Regression Model
+#### 1.1.2 Regression Model
 
-##### Linear regression model part 1
+##### 1.1.2.1 Linear regression model part 1
 
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
 - most commonly used model
@@ -155,7 +157,7 @@ Which of these is a type of unsupervised learning?
 | (x,y)        | single training example
 | (xⁱ,yⁱ)      | i-th training example
 
-##### Linear regression model part 2
+##### 1.1.2.1 Linear regression model part 2
 
 ```mermaid
 flowchart TD
@@ -172,7 +174,7 @@ B --> F[f (function)]
 
 - `Univariate` linear regression => one variable
 
-##### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+##### 1.1.2.2 [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
@@ -195,7 +197,7 @@ Code
     - `marker` for symbol to use
     - `c` for color
 
-##### Cost function formula
+##### 1.1.2.3 Cost function formula
 
 ![img/01.01.parameters.png](img/01.01.parameters.png)
 - We can play with `w` & `b` to find the best fit line
@@ -218,7 +220,7 @@ Code
 - $`w`$ only, because we should choose $`b = 0`$
 - $`\hat{y}`$
 
-##### Cost Function Intuition
+##### 1.1.2.4 Cost Function Intuition
 
 To get a sense of how to minimize $`J`$ we can use a simplified model
 
@@ -252,7 +254,7 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 > :bulb: The goal of linear regression is to find the values of $`w,b`$ that
 > allows us to minimize $`J_{(w,b)}`$
 x
-##### Visualizing the cost function
+##### 1.1.2.5 Visualizing the cost function
 
 |               |                                                                                     |
 | --            | --                                                                                  |
@@ -279,7 +281,7 @@ x
 - the center of the contour is the minimum
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
 
-##### Visualization examples
+##### 1.1.2.6 Visualization examples
 
 Here are some examples of `J`
 
@@ -296,12 +298,12 @@ In the next lab, you can click on different points on the contour to view the co
 
 > __Gradient Descent__ is an algorithm to train linear regression and other complex models 
 
-##### [Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+##### 1.1.2.7 [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
-##### Quiz: Regression Model
+##### 1.1.2.8 Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
 - [ ] $`m`$
@@ -316,9 +318,9 @@ In the next lab, you can click on different points on the contour to view the co
 
 <details><summary>Ans</summary>4, 1</details>
 
-#### Train the model with gradient descent
+#### 1.1.3 Train the model with gradient descent
 
-##### Gradient descent
+##### 1.1.3.1 Gradient descent
 
 Want a systematic way to find values of $`w,b`$ that allows us to easily find
 smallest $`J`$
@@ -343,7 +345,7 @@ regression but also in advanced neural network models
 
 > `local minima` may not be the true lowest point
 
-##### Implementing gradient descent
+##### 1.1.3.2 Implementing gradient descent
 
 ![](1.1.3.2.algorithm.png)
 - The __Gradient Descent__ algorithm
@@ -358,11 +360,11 @@ regression but also in advanced neural network models
   - $`tmp_b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
   - $`w = tmp_w && b = tmp_b`$
 
-##### Gradient descent intuition
-##### Learning rate
-##### Gradient descent for linear regression
-##### Running gradient descent
-##### Optional lab: Gradient descent
+##### 1.1.3.3 Gradient descent intuition
+##### 1.1.3.4 Learning rate
+##### 1.1.3.5 Gradient descent for linear regression
+##### 1.1.3.6 Running gradient descent
+##### 1.1.3.7 Lab: Gradient descent
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
