@@ -358,7 +358,7 @@ regression but also in advanced neural network models
   - ie each subsequent step doesn't change the value
 - We want to _simultaneously_ update w and b at each step
   - `tmp_w =` $`w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - `tmp_b =` $`$b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - `tmp_b =` $`b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
   - `w = tmp_w && b = tmp_b`
 
 ##### 1.1.3.3 Gradient descent intuition
