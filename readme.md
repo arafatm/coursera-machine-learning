@@ -205,7 +205,7 @@ Code
 
 ![img/01.01.cost.function.png](img/01.01.cost.function.png)
 - 1st step to implement linear function is to define `Cost Function`
--  Given $`f_{w,b}(x) = wx + b`$ where `w` is the __slope__ and `b` is the __y-intercept__ 
+-  Given $`f_{w,b}(x) = wx + b`$ where `w` is the `slope` and `b` is the `y-intercept` 
 - `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
 - ie `error` = $`\hat{y} - y`$ 
 - $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
@@ -272,7 +272,7 @@ x
 - The value of `J` is the height
 
 ![](img/01.01.05.contour.plot.png)
-- this is easier to visualize as a __contour plot__
+- this is easier to visualize as a `contour plot`
 
 ![](img/01.01.05.mount.fuji.png)
 - Same as used to visualize height of mountains
@@ -297,7 +297,7 @@ Here are some examples of `J`
 
 In the next lab, you can click on different points on the contour to view the cost function on the graph
 
-> __Gradient Descent__ is an algorithm to train linear regression and other complex models 
+> `Gradient Descent` is an algorithm to train linear regression and other complex models 
 
 ##### [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
@@ -326,7 +326,7 @@ In the next lab, you can click on different points on the contour to view the co
 Want a systematic way to find values of $`w,b`$ that allows us to easily find
 smallest $`J`$
 
-__Gradient Descent__ is an algorithm used for any function, not just in linear
+`Gradient Descent` is an algorithm used for any function, not just in linear
 regression but also in advanced neural network models
 
 ![](/img/1.1.3.1.algorithm.png)
@@ -342,17 +342,17 @@ regression but also in advanced neural network models
 - pick a direction and take a step that is slightly lower
   - repeat until you're at lowest point
 - However, depending on starting point and direction, you will end up at a different "lowest point"
-  - Known as __local mimina__
+  - Known as `local mimina`
 
 > `local minima` may not be the true lowest point
 
 ##### 1.1.3.2 Implementing gradient descent
 
 ![](/img/1.1.3.2.algorithm.png)
-- The __Gradient Descent__ algorithm
+- The `Gradient Descent` algorithm
 - $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - $`\alpha`$ == __learning rate__. ie How "big a step" you take down the hill
-  - $`\frac{\partial}{\partial w} J_{(w,b)}`$ == __derivative__. ie which direction
+  - $`\alpha`$ == `learning rate`. ie How "big a step" you take down the hill
+  - $`\frac{\partial}{\partial w} J_{(w,b)}`$ == `derivative`. ie which direction
 - $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
 - We repeat these 2 steps for $`w,b`$ until the algorithm __converges__
   - ie each subsequent step doesn't change the value
