@@ -2,38 +2,41 @@
 
 - [Discourse  - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
 
-1. [ [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)](#-supervised-machine-learning-regression-and-classificationhttpswwwcourseraorglearnmachine-learninghomeinfo)
-	1. [Introduction to Machine Learning](#introduction-to-machine-learning)
-		1. [Supervised vs Unsuperverside Machine Learning](#supervised-vs-unsuperverside-machine-learning)
-			1. [What is machine learning?](#what-is-machine-learning)
-			2. [Supervised Learning: Regression Algorithms](#supervised-learning-regression-algorithms)
-			3. [Supervised Learning: Classification](#supervised-learning-classification)
-			4. [Unsupervised Learning](#unsupervised-learning)
-					1. [Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm--check-all-that-apply)
-			5. [**Lab:** Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
-			6. [**Quiz:** Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
-		2. [Regression Model](#regression-model)
-			1. [Linear regression model part 1](#linear-regression-model-part-1)
-			2. [Linear regression model part 2](#linear-regression-model-part-2)
-			3. [[Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)](#lab-optional-lab-model-representationhttpswwwcourseraorglearnmachine-learningungradedlabphn1xoptional-lab-model-representationlab)
-			4. [Cost function formula](#cost-function-formula)
-				1. [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
-			5. [Cost Function Intuition](#cost-function-intuition)
-			6. [Visualizing the cost function](#visualizing-the-cost-function)
-			7. [Visualization examples](#visualization-examples)
-			8. [[Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)](#lab-optional-lab-cost-functionhttpswwwcourseraorglearnmachine-learningungradedlabudphhoptional-lab-cost-functionlabpath2fnotebooks2fc1_w1_lab03_cost_function_solnipynb)
-			9. [Quiz: Regression Model](#quiz-regression-model)
-		3. [Train the model with gradient descent](#train-the-model-with-gradient-descent)
-			1. [Gradient descent](#gradient-descent)
-			2. [Implementing gradient descent](#implementing-gradient-descent)
-			3. [Gradient descent intuition](#gradient-descent-intuition)
-			4. [Learning rate](#learning-rate)
-			5. [Gradient descent for linear regression](#gradient-descent-for-linear-regression)
-			6. [Running gradient descent](#running-gradient-descent)
-			7. [Optional lab: Gradient descent](#optional-lab-gradient-descent)
-			8. [Practice quiz: Train the model with gradient descent](#practice-quiz-train-the-model-with-gradient-descent)
 
-##  [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
+<!-- vim-markdown-toc GFM -->
+
+* [Supervised Machine Learning: Regression and Classification](#supervised-machine-learning-regression-and-classification)
+  * [Introduction to Machine Learning](#introduction-to-machine-learning)
+    * [Supervised vs Unsuperverside Machine Learning](#supervised-vs-unsuperverside-machine-learning)
+      * [What is machine learning?](#what-is-machine-learning)
+      * [Supervised Learning: Regression Algorithms](#supervised-learning-regression-algorithms)
+      * [Supervised Learning: Classification](#supervised-learning-classification)
+      * [Unsupervised Learning](#unsupervised-learning)
+      * [**Lab:** Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
+      * [**Quiz:** Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
+    * [Regression Model](#regression-model)
+      * [Linear regression model part 1](#linear-regression-model-part-1)
+      * [Linear regression model part 2](#linear-regression-model-part-2)
+      * [Lab: Optional lab: Model representation](#lab-optional-lab-model-representation)
+      * [Cost function formula](#cost-function-formula)
+        * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
+      * [Cost Function Intuition](#cost-function-intuition)
+      * [Visualizing the cost function](#visualizing-the-cost-function)
+      * [Visualization examples](#visualization-examples)
+      * [Lab: Optional lab: Cost function](#lab-optional-lab-cost-function)
+      * [Quiz: Regression Model](#quiz-regression-model)
+    * [Train the model with gradient descent](#train-the-model-with-gradient-descent)
+      * [Gradient descent](#gradient-descent)
+      * [Implementing gradient descent](#implementing-gradient-descent)
+      * [Gradient descent intuition](#gradient-descent-intuition)
+      * [Learning rate](#learning-rate)
+      * [Gradient descent for linear regression](#gradient-descent-for-linear-regression)
+      * [Running gradient descent](#running-gradient-descent)
+      * [Optional lab: Gradient descent](#optional-lab-gradient-descent)
+
+<!-- vim-markdown-toc -->
+
+## [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
 ### Introduction to Machine Learning
 
@@ -360,7 +363,6 @@ regression but also in advanced neural network models
 ##### Gradient descent for linear regression
 ##### Running gradient descent
 ##### Optional lab: Gradient descent
-##### Practice quiz: Train the model with gradient descent
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
