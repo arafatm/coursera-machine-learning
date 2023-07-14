@@ -362,6 +362,15 @@ regression but also in advanced neural network models
   - `w = tmp_w && b = tmp_b`
 
 ##### 1.1.3.3 Gradient descent intuition
+
+
+```math
+repeat until convergence {
+  $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+  $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+}
+```
+
 ##### 1.1.3.4 Learning rate
 ##### 1.1.3.5 Gradient descent for linear regression
 ##### 1.1.3.6 Running gradient descent
