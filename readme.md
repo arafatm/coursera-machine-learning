@@ -320,11 +320,12 @@ smallest $`J`$
 __Gradient Descent__ is an algorithm used for any function, not just in linear
 regression but also in advanced neural network models
 
-1.1..3.1.algorithm.png
+1.1.3.1.algorithm.png
 - start with some $`w,b`$ e.g. $`(0,0)`$
 - keep changing $`w,b`$ to reduce $`J(w,b)`$
 - until we settle at or near a minimume
 
+1.1.3.1.local.minima.png
 - Example of a more comples $`J`$
 - not a squared error cost
 - not linear regression
