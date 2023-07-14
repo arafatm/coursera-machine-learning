@@ -2,9 +2,40 @@
 
 - [Discourse  - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
 
+1. [ [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)](#-supervised-machine-learning-regression-and-classificationhttpswwwcourseraorglearnmachine-learninghomeinfo)
+	1. [Introduction to Machine Learning](#introduction-to-machine-learning)
+		1. [Supervised vs Unsuperverside Machine Learning](#supervised-vs-unsuperverside-machine-learning)
+			1. [What is machine learning?](#what-is-machine-learning)
+			2. [Supervised Learning: Regression Algorithms](#supervised-learning-regression-algorithms)
+			3. [Supervised Learning: Classification](#supervised-learning-classification)
+			4. [Unsupervised Learning](#unsupervised-learning)
+					1. [Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm--check-all-that-apply)
+			5. [**Lab:** Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
+			6. [**Quiz:** Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
+		2. [Regression Model](#regression-model)
+			1. [Linear regression model part 1](#linear-regression-model-part-1)
+			2. [Linear regression model part 2](#linear-regression-model-part-2)
+			3. [[Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)](#lab-optional-lab-model-representationhttpswwwcourseraorglearnmachine-learningungradedlabphn1xoptional-lab-model-representationlab)
+			4. [Cost function formula](#cost-function-formula)
+				1. [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
+			5. [Cost Function Intuition](#cost-function-intuition)
+			6. [Visualizing the cost function](#visualizing-the-cost-function)
+			7. [Visualization examples](#visualization-examples)
+			8. [[Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)](#lab-optional-lab-cost-functionhttpswwwcourseraorglearnmachine-learningungradedlabudphhoptional-lab-cost-functionlabpath2fnotebooks2fc1_w1_lab03_cost_function_solnipynb)
+			9. [Quiz: Regression Model](#quiz-regression-model)
+		3. [Train the model with gradient descent](#train-the-model-with-gradient-descent)
+			1. [Gradient descent](#gradient-descent)
+			2. [Implementing gradient descent](#implementing-gradient-descent)
+			3. [Gradient descent intuition](#gradient-descent-intuition)
+			4. [Learning rate](#learning-rate)
+			5. [Gradient descent for linear regression](#gradient-descent-for-linear-regression)
+			6. [Running gradient descent](#running-gradient-descent)
+			7. [Optional lab: Gradient descent](#optional-lab-gradient-descent)
+			8. [Practice quiz: Train the model with gradient descent](#practice-quiz-train-the-model-with-gradient-descent)
+
 ##  [Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
-### 1: Introduction to Machine Learning
+### Introduction to Machine Learning
 
 #### Supervised vs Unsuperverside Machine Learning
 ##### What is machine learning?
@@ -88,7 +119,7 @@ Supervised Learning
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
-#### **Quiz:** Supervised vs Unsupervised Learning
+##### **Quiz:** Supervised vs Unsupervised Learning
 
 Which are the two common types of supervised learning (choose two)
 - [ ] Classificaiton
@@ -101,7 +132,6 @@ Which of these is a type of unsupervised learning?
 - [ ] Classification
 
 #### Regression Model
-
 ##### Linear regression model part 1
 
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
@@ -266,7 +296,7 @@ In the next lab, you can click on different points on the contour to view the co
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
-#### Quiz: Regression Model
+##### Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
 - [ ] $`m`$
@@ -279,14 +309,40 @@ In the next lab, you can click on different points on the contour to view the co
 - [ ] This is never possible. There must be a bug in the code
 - [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really poorly
 
-<details><summary>4, 1</summary></details>
+<details><summary>Ans</summary>4, 1</details>
 
 #### Train the model with gradient descent
-
 ##### Gradient descent
+
+Want a systematic way to find values of $`w,b`$ that allows us to easily find
+smallest $`J`$
+
+__Gradient Descent__ is an algorithm used for any function, not just in linear
+regression but also in advanced neural network models
+
+1.1..3.1.algorithm.png
+- start with some $`w,b`$ e.g. $`(0,0)`$
+- keep changing $`w,b`$ to reduce $`J(w,b)`$
+- until we settle at or near a minimume
+
+- Example of a more comples $`J`$
+- not a squared error cost
+- not linear regression
+- we want to get to the lowest point in this topography
+- pick a direction and take a step that is slightly lower
+  - repeat until you're at lowest point
+- However, depending on starting point and direction, you will end up at a different "lowest point"
+  - Known as __local mimina__
+
+> `local minima` may not be the true lowest point
+
 ##### Implementing gradient descent
 ##### Gradient descent intuition
 ##### Learning rate
+##### Gradient descent for linear regression
+##### Running gradient descent
+##### Optional lab: Gradient descent
+##### Practice quiz: Train the model with gradient descent
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
