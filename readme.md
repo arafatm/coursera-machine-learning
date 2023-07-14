@@ -6,13 +6,14 @@
 
 ### 1: Introduction to Machine Learning
 
-#### What is machine learning?
+#### Supervised vs Unsuperverside Machine Learning
+##### What is machine learning?
 
 > Field of study that gives computers the ability learn without being explicitly pogrammed -- Arthur Samuel
 
 Supervised vs Unsupervised
 
-#### Supervised Learning: Regression Algorithms 
+##### Supervised Learning: Regression Algorithms 
 
 > learn x to y or input to output mappings
 
@@ -29,7 +30,7 @@ Supervised vs Unsupervised
 
 - Use different algorithms to predict price of house based on data
 
-#### Supervised Learning: Classification 
+##### Supervised Learning: Classification 
 
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
@@ -53,7 +54,7 @@ Supervised Learning
 | Predicts | numbers    | categories     |
 | Outputs  | infinite   | limited        |
 
-#### Unsupervised Learning 
+##### Unsupervised Learning 
 
 ![img/unsupervised.clusturing.png](img/unsupervised.clusturing.png)
 
@@ -76,14 +77,14 @@ Supervised Learning
 > - `Anomaly Detection`: Find unusual data points
 > - `Dimensionality Reduction`: Compress data using fewer numbers
 
-###### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)
+####### Question: Of the following examples, which would you address using an unsupervised learning algorithm?  (Check all that apply.)
 
 - [ ] Given a set of news articles found on the web, group them into sets of articles about the same stories.
 - [ ] Given email labeled as spam/not spam, learn a spam filter.
 - [ ] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-#### **Lab:** Python and Jupyter Notebooks
+##### **Lab:** Python and Jupyter Notebooks
 
 [Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
@@ -99,7 +100,9 @@ Which of these is a type of unsupervised learning?
 - [ ] Regression
 - [ ] Classification
 
-#### Linear regression model part 1
+#### Regression Model
+
+##### Linear regression model part 1
 
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
 - most commonly used model
@@ -117,7 +120,7 @@ Which of these is a type of unsupervised learning?
 | (x,y)        | single training example
 | (xⁱ,yⁱ)      | i-th training example
 
-#### Linear regression model part 2
+##### Linear regression model part 2
 
 ```mermaid
 flowchart TD
@@ -134,7 +137,7 @@ B --> F[f (function)]
 
 - `Univariate` linear regression => one variable
 
-#### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+##### [Lab: Optional lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
 Here is a summary of some of the notation you will encounter.  
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
@@ -157,7 +160,7 @@ Code
     - `marker` for symbol to use
     - `c` for color
 
-#### Cost function formula
+##### Cost function formula
 
 ![img/01.01.parameters.png](img/01.01.parameters.png)
 - We can play with `w` & `b` to find the best fit line
@@ -174,13 +177,13 @@ Code
 - Which can be rewritten as $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
 - Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
 
-##### Question: Which of these parameters of the model that can be adjusted?
+###### Question: Which of these parameters of the model that can be adjusted?
 - $`w`$ and $`b`$
 - $`f_{w,b}`$
 - $`w`$ only, because we should choose $`b = 0`$
 - $`\hat{y}`$
 
-#### Cost Function Intuition
+##### Cost Function Intuition
 
 To get a sense of how to minimize $`J`$ we can use a simplified model
 
@@ -213,8 +216,8 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 
 > :bulb: The goal of linear regression is to find the values of $`w,b`$ that
 > allows us to minimize $`J_{(w,b)}`$
-
-#### Visualizing the cost function
+x
+##### Visualizing the cost function
 
 |               |                                                                                     |
 | --            | --                                                                                  |
@@ -241,7 +244,7 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 - the center of the contour is the minimum
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
 
-#### Visualization examples
+##### Visualization examples
 
 Here are some examples of `J`
 
@@ -258,12 +261,12 @@ In the next lab, you can click on different points on the contour to view the co
 
 > __Gradient Descent__ is an algorithm to train linear regression and other complex models 
 
-#### [Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+##### [Lab: Optional lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
 
 [Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
 - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
-#### Quiz
+#### Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
 - [ ] $`m`$
@@ -277,6 +280,13 @@ In the next lab, you can click on different points on the contour to view the co
 - [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really poorly
 
 <details><summary>4, 1</summary></details>
+
+#### Train the model with gradient descent
+
+##### Gradient descent
+##### Implementing gradient descent
+##### Gradient descent intuition
+##### Learning rate
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
