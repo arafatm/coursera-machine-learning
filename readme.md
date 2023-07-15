@@ -363,7 +363,7 @@ regression but also in advanced neural network models
 
 ##### 1.1.3.3 Gradient descent intuition
 
-1.1.3.3.min.J.png
+![](/img/1.1.3.3.min.J.png)
 - We want to find minimum `w,b`
 ```math
 \begin{aligned}
@@ -377,7 +377,7 @@ regression but also in advanced neural network models
 - Gradient descent with $`w = w - \alpha \frac{\partial}{\partial w} J_{(w)}`$
 - minimize cost by adjusting just `w`: $`\min J(w)`$
 
-1.1.3.3.slope.png
+![](/img/1.1.3.3.slope.png)
 - Recall previous example where we set `b = 0`
 - Initialize `w` at a random location
 - $`\frac{\partial}{\partial w} J(w)`$ is the __slope__
@@ -386,6 +386,22 @@ regression but also in advanced neural network models
 - However (_2nd graph_), slope is negative, and therefore also in the correct direction
 
 ##### 1.1.3.4 Learning rate
+
+![](1.1.3.4.alpha.png)
+- $`\alpha`$ is the __learning rate__ ie how big a step to take
+  - If _too small_ then you take small steps and will take a long time to find minimum
+  - If _too big_ then you might miss true minimum ie __diverge__ instead of _converge_
+
+![](1.1.3.4.local.minimum.png)
+- If you're already at local minimum...
+- `slope = 0` and therefore $`\frac{\partial}{\partial w} J(w) = 0`$ 
+  - ie `w = w * 0`
+  - further _steps_ will bring you back here
+
+![](1.1.3.4.derivative.png)
+- As we get closer to local minimum, gradient descent (_derivative function_)
+  will __automatically take smaller steps__
+
 ##### 1.1.3.5 Gradient descent for linear regression
 ##### 1.1.3.6 Running gradient descent
 ##### Lab: Gradient descent
