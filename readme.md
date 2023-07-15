@@ -35,6 +35,14 @@
       * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
       * [Lab: Gradient descent](#lab-gradient-descent)
       * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
+  * [1.2 Wk 2: Regression with Multiple Input Variables](#12-wk-2-regression-with-multiple-input-variables)
+    * [1.2.1 Multiple Linear Regression](#121-multiple-linear-regression)
+      * [1.2.1.1 Multiple features](#1211-multiple-features)
+      * [1.2.1.2 Vectorization part 1](#1212-vectorization-part-1)
+      * [1.2.1.3 Vectorization part 2](#1213-vectorization-part-2)
+      * [Lab: Python, NumPy and vectorization](#lab-python-numpy-and-vectorization)
+      * [1.2.1.4 Gradient descent for multiple linear regression](#1214-gradient-descent-for-multiple-linear-regression)
+      * [Lab: Muliple linear regression](#lab-muliple-linear-regression)
 
 <!-- vim-markdown-toc -->
 
@@ -489,6 +497,18 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 - [ ] $`b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}`$
 
 <details><summary>Ans</summary>2, 2</details>
+
+### 1.2 Wk 2: Regression with Multiple Input Variables
+
+#### 1.2.1 Multiple Linear Regression
+
+##### 1.2.1.1 Multiple features
+
+##### 1.2.1.2 Vectorization part 1
+##### 1.2.1.3 Vectorization part 2
+##### Lab: Python, NumPy and vectorization
+##### 1.2.1.4 Gradient descent for multiple linear regression
+##### Lab: Muliple linear regression
 
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
