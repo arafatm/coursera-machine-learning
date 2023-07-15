@@ -364,6 +364,11 @@ regression but also in advanced neural network models
 ##### 1.1.3.3 Gradient descent intuition
 
 1.1.3.3.min.J.png
+
+$`test`$
+
+$`  test`$
+
 ```math
 \begin{align}
 \text{repeat until convergence \{} \\ 
