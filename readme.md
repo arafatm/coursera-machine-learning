@@ -419,10 +419,10 @@ regression but also in advanced neural network models
 ```math
 \begin{align}
 \frac{\partial}{\partial w} J_{(w,b)} = \\
-&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^2`$ \\
-&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)})^2`$ \\
-&= \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)}) 2x^{(i)}`$ \\
-&= \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}`$ \\
+&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^2 \\
+&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)})^2 \\
+&= \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)}) 2x^{(i)} \\
+&= \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}
 \end{align}
 ```
 
