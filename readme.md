@@ -378,8 +378,8 @@ We want to find `min w`
 ```math
 \begin{align}
 J(w)\\
-w = w - \alpha \frac{\partial}{\partial w} J_{(w)}\\
-min_{w} J(w)
+  w = w - \alpha \frac{\partial}{\partial w} J_{(w)}\\
+  min_{w} J(w)
 \end{align}
 ```
 
