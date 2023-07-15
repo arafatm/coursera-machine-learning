@@ -5,6 +5,7 @@
 
 <!-- vim-markdown-toc GFM -->
 
+* [(141) Understand Calculus in 35 Minutes - YouTube](#141-understand-calculus-in-35-minutes---youtube)
 * [C1 Supervised Machine Learning: Regression and Classification](#c1-supervised-machine-learning-regression-and-classification)
   * [W1 Introduction to Machine Learning](#w1-introduction-to-machine-learning)
     * [1.1.1 Supervised vs Unsuperverside Machine Learning](#111-supervised-vs-unsuperverside-machine-learning)
@@ -36,6 +37,10 @@
       * [Lab: Gradient descent](#lab-gradient-descent)
 
 <!-- vim-markdown-toc -->
+
+## [(141) Understand Calculus in 35 Minutes - YouTube](https://www.youtube.com/watch?v=WsQQvHm4lSw)
+
+1. $`\limit{f(2)}`$
 
 ## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
