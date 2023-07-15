@@ -365,23 +365,21 @@ regression but also in advanced neural network models
 
 1.1.3.3.min.J.png
 - We want to find minimum `w,b`
-  ```math
-  \begin{aligned}
-  \text{repeat until convergence \{} \\ 
-    &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-    &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
-  \}
-  \end{aligned}
-  ```
-
-We want to find `min w`
-
 ```math
-\displaylines{
-J(w)\\\\
-w = w - \alpha \frac{\partial}{\partial w} J_{(w)}\\\\
-min_{w} J(w)
-}
+\begin{aligned}
+\text{repeat until convergence \{} \\ 
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+\}
+\end{aligned}
+```
+- Starting with finding `min w` we can simplify to just $`J(w)`$
+```math
+\begin{aligned}
+J(w) \\
+&w = w - \alpha \frac{\partial}{\partial w} J_{(w)}\\\\
+&min_{w} J(w)
+\end{aligned}
 ```
 
 ##### 1.1.3.4 Learning rate
