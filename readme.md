@@ -364,19 +364,15 @@ regression but also in advanced neural network models
 ##### 1.1.3.3 Gradient descent intuition
 
 1.1.3.3.min.J.png
-
-$`test`$
-
-$`  test`$
-
-```math
-\begin{aligned}
-\text{repeat until convergence \{} \\ 
-  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
-\}
-\end{aligned}
-```
+- We want to find minimum `w,b`
+  ```math
+  \begin{aligned}
+  \text{repeat until convergence \{} \\ 
+    &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+    &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+  \}
+  \end{aligned}
+  ```
 
 We want to find `min w`
 
