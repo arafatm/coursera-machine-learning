@@ -404,7 +404,7 @@ regression but also in advanced neural network models
 
 ##### 1.1.3.5 Gradient descent for linear regression
 
-- Recap                      
+![](/img/1.1.3.5.recap.png)
 - linear regression model     $`f_{w,b}(x) = wx + b`$
 - cost function               $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^{2}`$
 - gradient descent algorithm  
@@ -414,6 +414,17 @@ regression but also in advanced neural network models
   - `}`
 - where $`\frac{\partial}{\partial w} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})x^{(i)}`$
 - and $`\frac{\partial}{\partial b} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})`$
+
+
+```math
+\begin{align}
+frac{\partial}{\partial w} J_{(w,b)} = \\
+&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^2`$ \\
+&= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)})^2`$ \\
+&= \frac{1}{2m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)}) 2x^{(i)}`$ \\
+&= \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}`$ \\
+\end{align}
+```
 
 
 ##### 1.1.3.6 Running gradient descent
