@@ -376,9 +376,11 @@ regression but also in advanced neural network models
 - Starting with finding `min w` we can simplify to just $`J(w)`$
 ```math
 \begin{aligned}
-&J(w) \\
-&w = w - \alpha \frac{\partial}{\partial w} J_{(w)} \\
-&min_{w} J(w)
+\text{start with cost function J(w)} \\
+\text{Gradient descent with just w} \\
+&w = w - \alpha \frac{\partial}{\partial w} J_{(w)} 
+\text{minimize cost by adjusting just w}
+&min_{w} J(w) 
 \end{aligned}
 ```
 
