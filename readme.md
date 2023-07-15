@@ -387,18 +387,18 @@ regression but also in advanced neural network models
 
 ##### 1.1.3.4 Learning rate
 
-![](1.1.3.4.alpha.png)
+![](/img/1.1.3.4.alpha.png)
 - $`\alpha`$ is the __learning rate__ ie how big a step to take
   - If _too small_ then you take small steps and will take a long time to find minimum
   - If _too big_ then you might miss true minimum ie __diverge__ instead of _converge_
 
-![](1.1.3.4.local.minimum.png)
+![](/img/1.1.3.4.local.minimum.png)
 - If you're already at local minimum...
 - `slope = 0` and therefore $`\frac{\partial}{\partial w} J(w) = 0`$ 
   - ie `w = w * 0`
   - further _steps_ will bring you back here
 
-![](1.1.3.4.derivative.png)
+![](/img/1.1.3.4.derivative.png)
 - As we get closer to local minimum, gradient descent (_derivative function_)
   will __automatically take smaller steps__
 
