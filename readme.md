@@ -363,10 +363,11 @@ regression but also in advanced neural network models
 
 ##### 1.1.3.3 Gradient descent intuition
 
-$$\text{repeat until convergence \{}$$
-
 ```math
-\text{repeat until convergence \{}
+\text{repeat until convergence \{} \\ 
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+\}
 ```
 
 ```math
