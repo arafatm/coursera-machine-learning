@@ -469,6 +469,27 @@ regression but also in advanced neural network models
 
 ##### Quiz: Train the Model with Gradient Descent
 
+1. Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.
+```math
+\begin{aligned}
+\text{repeat until convergence \{} \\ 
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+\}
+\end{aligned}
+```
+When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happens to `w` after one update step?
+- [ ] It is not possible to tell is `w` will increase or decrease
+- [ ] w increases
+- [ ] w stays the same
+- [ ] w decreases 
+
+2. For linear regression, what is the update step for parameter b?
+- [ ] $`b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)})`$
+- [ ] $`b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}`$
+
+<details><summary>Ans</summary>2, 2</details>
+
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
