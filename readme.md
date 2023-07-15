@@ -403,6 +403,19 @@ regression but also in advanced neural network models
   will __automatically take smaller steps__
 
 ##### 1.1.3.5 Gradient descent for linear regression
+
+- Recap                      
+- linear regression model     $`f_{w,b}(x) = wx + b`$
+- cost function               $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^{2}`$
+- gradient descent algorithm  
+  - `repeat until convergence {`
+  - $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
+  - $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - `}`
+- where $`\frac{\partial}{\partial w} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})x^{(i)}`$
+- and $`\frac{\partial}{\partial b} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})`$
+
+
 ##### 1.1.3.6 Running gradient descent
 ##### Lab: Gradient descent
 <!-- vim: set textwidth=0: -->
