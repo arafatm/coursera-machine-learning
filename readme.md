@@ -5,7 +5,6 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [(141) Understand Calculus in 35 Minutes - YouTube](#141-understand-calculus-in-35-minutes---youtube)
 * [C1 Supervised Machine Learning: Regression and Classification](#c1-supervised-machine-learning-regression-and-classification)
   * [W1 Introduction to Machine Learning](#w1-introduction-to-machine-learning)
     * [1.1.1 Supervised vs Unsuperverside Machine Learning](#111-supervised-vs-unsuperverside-machine-learning)
@@ -37,10 +36,6 @@
       * [Lab: Gradient descent](#lab-gradient-descent)
 
 <!-- vim-markdown-toc -->
-
-## [(141) Understand Calculus in 35 Minutes - YouTube](https://www.youtube.com/watch?v=WsQQvHm4lSw)
-
-1. $`\lim \limits_{x \to 2} f(x)`$
 
 ## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
@@ -370,10 +365,12 @@ regression but also in advanced neural network models
 
 
 ```math
-repeat until convergence {\\
-  w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-  b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
-}
+\begin{align}
+\text{repeat until convergence \{}
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+\}
+\end{align}
 ```
 
 ##### 1.1.3.4 Learning rate
