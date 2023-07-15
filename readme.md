@@ -415,7 +415,7 @@ regression but also in advanced neural network models
 - where $`\frac{\partial}{\partial w} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})x^{(i)}`$
 - and $`\frac{\partial}{\partial b} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})`$
 
-![](/img)
+![](/img/1.1.3.5.optional.png)
 - We can simplify for `w`
 ```math
 \begin{align}
@@ -439,6 +439,12 @@ regression but also in advanced neural network models
 \end{align}
 ```
 
+![](/img/1.1.3.5.gradient.descent.png) 
+
+![](/img/1.1.3.5.local.minima.png) 
+
+![](/img/1.1.3.5.convex.png) 
+- a __convex function__ will have a _single global minimum_
 
 ##### 1.1.3.6 Running gradient descent
 ##### Lab: Gradient descent
