@@ -40,7 +40,7 @@
 
 ## [(141) Understand Calculus in 35 Minutes - YouTube](https://www.youtube.com/watch?v=WsQQvHm4lSw)
 
-1. $`\limit{f(2)}`$
+1. $`\lim \limits_{x \to 2} f(x)}`$
 
 ## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
