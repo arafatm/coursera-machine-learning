@@ -34,6 +34,7 @@
       * [1.1.3.5 Gradient descent for linear regression](#1135-gradient-descent-for-linear-regression)
       * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
       * [Lab: Gradient descent](#lab-gradient-descent)
+      * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
 
 <!-- vim-markdown-toc -->
 
@@ -447,7 +448,27 @@ regression but also in advanced neural network models
 - a __convex function__ will have a _single global minimum_
 
 ##### 1.1.3.6 Running gradient descent
+
+![](/img/1.1.3.6.plot.png) 
+- left is _plot of the model_
+- right is __contour plot__ of the cost function
+- bottom is the __surface plot__ of the cost function
+- for this example, `w = -0.1, b = 900`
+- as we take each step we get closer to the global minimum
+  - the yellow line is the __best line fit__
+- Given a house with `1250 sq ft`, we can predict it should sell for `$250k` per the model
+
+![](/img/1.1.3.6.batch.png) 
+- __Batch Gradient Descent__ => each step of the gradient descent uses _all the training examples_
+- DeepLearning.AI newsletter: _The Batch_
+
 ##### Lab: Gradient descent
+
+- [Coursera: Optional lab: Gradient descent | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent/lab)
+- [Lab: Cost Function](/code/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
+
+##### Quiz: Train the Model with Gradient Descent
+
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
