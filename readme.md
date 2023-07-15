@@ -375,7 +375,7 @@ regression but also in advanced neural network models
 ```
 - Starting with finding `min w` we can simplify to just $`J(w)`$
 - Gradient descent with $`w = w - \alpha \frac{\partial}{\partial w} J_{(w)}`$
-- minimize cost by adjusting just `w`: $`$min_{w} J(w)`$
+- minimize cost by adjusting just `w`: $`\min J(w)`$
 
 ##### 1.1.3.4 Learning rate
 ##### 1.1.3.5 Gradient descent for linear regression
