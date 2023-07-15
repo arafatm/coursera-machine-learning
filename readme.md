@@ -367,8 +367,8 @@ regression but also in advanced neural network models
 ```math
 \begin{align}
 \text{repeat until convergence \{} \\ 
-  w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
-  b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
+  &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
+  &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 \}
 \end{align}
 ```
@@ -376,9 +376,11 @@ regression but also in advanced neural network models
 We want to find `min w`
 
 ```math
+\begin{align}
 J(w)\\
   w = w - \alpha \frac{\partial}{\partial w} J_{(w)}\\
   min_{w} J(w)
+\end{align}
 ```
 
 ##### 1.1.3.4 Learning rate
