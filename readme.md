@@ -377,6 +377,14 @@ regression but also in advanced neural network models
 - Gradient descent with $`w = w - \alpha \frac{\partial}{\partial w} J_{(w)}`$
 - minimize cost by adjusting just `w`: $`\min J(w)`$
 
+1.1.3.3.slope.png
+- Recall previous example where we set `b = 0`
+- Initialize `w` at a random location
+- $`\frac{\partial}{\partial w} J(w)`$ is the __slope__
+  - we want to find slopes __that take us to minimum w__
+- In the first case, we get $`w - \alpha (positive number)`$ which is the correct direction
+- However (_2nd graph_), slope is negative, and therefore also in the correct direction
+
 ##### 1.1.3.4 Learning rate
 ##### 1.1.3.5 Gradient descent for linear regression
 ##### 1.1.3.6 Running gradient descent
