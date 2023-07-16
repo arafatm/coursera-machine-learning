@@ -13,18 +13,18 @@
       * [C1_W1_M1_3 Supervised Learning: Classification](#c1_w1_m1_3-supervised-learning-classification)
       * [C1_W1_M1_4 Unsupervised Learning](#c1_w1_m1_4-unsupervised-learning)
         * [Question: Of the following examples, which would you address using an unsupervised learning algorithm?](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm)
-      * [Lab: Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
+      * [C1_W1_L1: Python and Jupyter Notebooks](#c1_w1_l1-python-and-jupyter-notebooks)
       * [Quiz: Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
     * [C1_W1_M2 Regression Model](#c1_w1_m2-regression-model)
       * [C1_W1_M2_1 Linear regression model part 1](#c1_w1_m2_1-linear-regression-model-part-1)
       * [C1_W1_M2_2 Linear regression model part 2](#c1_w1_m2_2-linear-regression-model-part-2)
-      * [Lab: Model representation](#lab-model-representation)
+      * [C1_W1_L2: Model representation](#c1_w1_l2-model-representation)
       * [C1_W1_M2_4 Cost function formula](#c1_w1_m2_4-cost-function-formula)
         * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
       * [C1_W1_M2_5 Cost Function Intuition](#c1_w1_m2_5-cost-function-intuition)
       * [C1_W1_M2_6 Visualizing the cost function](#c1_w1_m2_6-visualizing-the-cost-function)
       * [C1_W1_M2_7 Visualization examples](#c1_w1_m2_7-visualization-examples)
-      * [Lab: Cost function](#lab-cost-function)
+      * [C1_W1_L3: Cost function](#c1_w1_l3-cost-function)
       * [Quiz: Regression Model](#quiz-regression-model)
     * [C1_W1_M3 Train the model with gradient descent](#c1_w1_m3-train-the-model-with-gradient-descent)
       * [C1_W1_M3_1 Gradient descent](#c1_w1_m3_1-gradient-descent)
@@ -33,7 +33,7 @@
       * [C1_W1_M3_4 Learning rate](#c1_w1_m3_4-learning-rate)
       * [C1_W1_M3_5 Gradient descent for linear regression](#c1_w1_m3_5-gradient-descent-for-linear-regression)
       * [C1_W1_M3_6 Running gradient descent](#c1_w1_m3_6-running-gradient-descent)
-      * [Lab: Gradient descent](#lab-gradient-descent)
+      * [C1_W1_L4: Gradient descent](#c1_w1_l4-gradient-descent)
       * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
   * [C1_W2: Regression with Multiple Input Variables](#c1_w2-regression-with-multiple-input-variables)
     * [C1_W2_M1 Multiple Linear Regression](#c1_w2_m1-multiple-linear-regression)
@@ -131,9 +131,10 @@ Supervised Learning
 - [ ] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-##### Lab: Python and Jupyter Notebooks
+##### C1_W1_L1: Python and Jupyter Notebooks
 
-[Python and Jupyter Notebooks | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
+- [Coursera Jupyter](https://www.coursera.org/learn/machine-learning/ungradedLab/rNe84/python-and-jupyter-notebooks/lab?path=%2Fnotebooks%2FC1_W1_Lab01_Python_Jupyter_Soln.ipynb)
+- [Local: Jupyter Notebook](/code/C1_W1_Lab01_Python_Jupyter_Soln.ipynb)
 
 ##### Quiz: Supervised vs Unsupervised Learning
 
@@ -184,7 +185,10 @@ B --> F[f (function)]
 
 - `Univariate` linear regression => one variable
 
-##### [Lab: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+##### C1_W1_L2: Model representation
+
+- [Coursera Jupyter: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
+- [Local: Model Representation](/code/C1_W1_Lab02_Model_Representation.ipynb)
 
 Here is a summary of some of the notation you will encounter.  
 
@@ -309,10 +313,11 @@ In the next lab, you can click on different points on the contour to view the co
 
 > `Gradient Descent` is an algorithm to train linear regression and other complex models 
 
-##### [Lab: Cost function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+##### C1_W1_L3: Cost function
 
-[Lab: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
-- `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
+- [Coursera Jupyter: Cost Function](https://www.coursera.org/learn/machine-learning/ungradedLab/udPHh/optional-lab-cost-function/lab?path=%2Fnotebooks%2FC1_W1_Lab03_Cost_function_Soln.ipynb)
+- [Local: Cost Function](/code/C1_W1_Lab03_Cost_function_Soln.ipynb)
+  - `from lab_utils_uni import plt_intuition, plt_stationary, plt_update_onclick, soup_bowl`
 
 ##### Quiz: Regression Model
 
@@ -471,10 +476,10 @@ regression but also in advanced neural network models
 - __Batch Gradient Descent__ => each step of the gradient descent uses _all the training examples_
 - DeepLearning.AI newsletter: _The Batch_
 
-##### Lab: Gradient descent
+##### C1_W1_L4: Gradient descent
 
-- [Coursera: Optional lab: Gradient descent | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent/lab)
-- [Lab: Cost Function](/code/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
+- [Coursera Jupyter: Gradient descent](https://www.coursera.org/learn/machine-learning/ungradedLab/lE1al/optional-lab-gradient-descent/lab)
+- [Local: Gradient Descent](/code/C1_W1_Lab04_Gradient_Descent_Soln.ipynb)
 
 ##### Quiz: Train the Model with Gradient Descent
 
