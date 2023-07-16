@@ -7,43 +7,43 @@
 
 * [C1 Supervised Machine Learning: Regression and Classification](#c1-supervised-machine-learning-regression-and-classification)
   * [W1 Introduction to Machine Learning](#w1-introduction-to-machine-learning)
-    * [1.1.1 Supervised vs Unsuperverside Machine Learning](#111-supervised-vs-unsuperverside-machine-learning)
-      * [1.1.1.1 What is machine learning?](#1111-what-is-machine-learning)
-      * [1.1.1.2 Supervised Learning: Regression Algorithms](#1112-supervised-learning-regression-algorithms)
-      * [1.1.1.3 Supervised Learning: Classification](#1113-supervised-learning-classification)
-      * [1.1.1.4 Unsupervised Learning](#1114-unsupervised-learning)
+    * [C1.W1.1 Supervised vs Unsuperverside Machine Learning](#c1w11-supervised-vs-unsuperverside-machine-learning)
+      * [C1.W1.1.1 What is machine learning?](#c1w111-what-is-machine-learning)
+      * [C1.W1.1.2 Supervised Learning: Regression Algorithms](#c1w112-supervised-learning-regression-algorithms)
+      * [C1.W1.1.3 Supervised Learning: Classification](#c1w113-supervised-learning-classification)
+      * [C1.W1.1.4 Unsupervised Learning](#c1w114-unsupervised-learning)
         * [Question: Of the following examples, which would you address using an unsupervised learning algorithm?](#question-of-the-following-examples-which-would-you-address-using-an-unsupervised-learning-algorithm)
       * [Lab: Python and Jupyter Notebooks](#lab-python-and-jupyter-notebooks)
       * [Quiz: Supervised vs Unsupervised Learning](#quiz-supervised-vs-unsupervised-learning)
-    * [1.1.2 Regression Model](#112-regression-model)
-      * [1.1.2.1 Linear regression model part 1](#1121-linear-regression-model-part-1)
-      * [1.1.2.2 Linear regression model part 2](#1122-linear-regression-model-part-2)
+    * [C1.W1.2 Regression Model](#c1w12-regression-model)
+      * [C1.W1.2.1 Linear regression model part 1](#c1w121-linear-regression-model-part-1)
+      * [C1.W1.2.2 Linear regression model part 2](#c1w122-linear-regression-model-part-2)
       * [Lab: Model representation](#lab-model-representation)
-      * [1.1.2.4 Cost function formula](#1124-cost-function-formula)
+      * [C1.W1.2.4 Cost function formula](#c1w124-cost-function-formula)
         * [Question: Which of these parameters of the model that can be adjusted?](#question-which-of-these-parameters-of-the-model-that-can-be-adjusted)
-      * [1.1.2.5 Cost Function Intuition](#1125-cost-function-intuition)
-      * [1.1.2.6 Visualizing the cost function](#1126-visualizing-the-cost-function)
-      * [1.1.2.7 Visualization examples](#1127-visualization-examples)
+      * [C1.W1.2.5 Cost Function Intuition](#c1w125-cost-function-intuition)
+      * [C1.W1.2.6 Visualizing the cost function](#c1w126-visualizing-the-cost-function)
+      * [C1.W1.2.7 Visualization examples](#c1w127-visualization-examples)
       * [Lab: Cost function](#lab-cost-function)
       * [Quiz: Regression Model](#quiz-regression-model)
-    * [1.1.3 Train the model with gradient descent](#113-train-the-model-with-gradient-descent)
-      * [1.1.3.1 Gradient descent](#1131-gradient-descent)
-      * [1.1.3.2 Implementing gradient descent](#1132-implementing-gradient-descent)
-      * [1.1.3.3 Gradient descent intuition](#1133-gradient-descent-intuition)
-      * [1.1.3.4 Learning rate](#1134-learning-rate)
-      * [1.1.3.5 Gradient descent for linear regression](#1135-gradient-descent-for-linear-regression)
-      * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
+    * [C1.W1.3 Train the model with gradient descent](#c1w13-train-the-model-with-gradient-descent)
+      * [C1.W1.3.1 Gradient descent](#c1w131-gradient-descent)
+      * [C1.W1.3.2 Implementing gradient descent](#c1w132-implementing-gradient-descent)
+      * [C1.W1.3.3 Gradient descent intuition](#c1w133-gradient-descent-intuition)
+      * [C1.W1.3.4 Learning rate](#c1w134-learning-rate)
+      * [C1.W1.3.5 Gradient descent for linear regression](#c1w135-gradient-descent-for-linear-regression)
+      * [C1.W1.3.6 Running gradient descent](#c1w136-running-gradient-descent)
       * [Lab: Gradient descent](#lab-gradient-descent)
       * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
   * [W2: Regression with Multiple Input Variables](#w2-regression-with-multiple-input-variables)
-    * [1.2.1 Multiple Linear Regression](#121-multiple-linear-regression)
-      * [1.2.1.1 Multiple features](#1211-multiple-features)
-      * [1.2.1.2 Vectorization part 1](#1212-vectorization-part-1)
-      * [1.2.1.3 Vectorization part 2](#1213-vectorization-part-2)
+    * [C1.W2.1 Multiple Linear Regression](#c1w21-multiple-linear-regression)
+      * [C1.W2.1.1 Multiple features](#c1w211-multiple-features)
+      * [C1.W2.1.2 Vectorization part 1](#c1w212-vectorization-part-1)
+      * [C1.W2.1.3 Vectorization part 2](#c1w213-vectorization-part-2)
       * [Lab: Python, NumPy and vectorization](#lab-python-numpy-and-vectorization)
-      * [1.2.1.4 Gradient descent for multiple linear regression](#1214-gradient-descent-for-multiple-linear-regression)
+      * [C1.W2.1.4 Gradient descent for multiple linear regression](#c1w214-gradient-descent-for-multiple-linear-regression)
       * [Lab: Muliple linear regression](#lab-muliple-linear-regression)
-    * [1.2.2 Gradient Descent In Practice](#122-gradient-descent-in-practice)
+    * [C1.W2.2 Gradient Descent In Practice](#c1w22-gradient-descent-in-practice)
 
 <!-- vim-markdown-toc -->
 
@@ -51,15 +51,15 @@
 
 ### W1 Introduction to Machine Learning
 
-#### 1.1.1 Supervised vs Unsuperverside Machine Learning
+#### C1.W1.1 Supervised vs Unsuperverside Machine Learning
 
-##### 1.1.1.1 What is machine learning?
+##### C1.W1.1.1 What is machine learning?
 
 > Field of study that gives computers the ability learn without being explicitly pogrammed -- Arthur Samuel
 
 Supervised vs Unsupervised
 
-##### 1.1.1.2 Supervised Learning: Regression Algorithms 
+##### C1.W1.1.2 Supervised Learning: Regression Algorithms 
 
 > learn x to y or input to output mappings
 
@@ -76,7 +76,7 @@ Supervised vs Unsupervised
 
 - Use different algorithms to predict price of house based on data
 
-##### 1.1.1.3 Supervised Learning: Classification 
+##### C1.W1.1.3 Supervised Learning: Classification 
 
 `Regression` attempts to predict ininite possible results
 `Classification` **predicts categories** ie from limited possible results
@@ -100,7 +100,7 @@ Supervised Learning
 | Predicts | numbers    | categories     |
 | Outputs  | infinite   | limited        |
 
-##### 1.1.1.4 Unsupervised Learning 
+##### C1.W1.1.4 Unsupervised Learning 
 
 ![img/unsupervised.clusturing.png](img/unsupervised.clusturing.png)
 
@@ -147,9 +147,9 @@ Which of these is a type of unsupervised learning?
 - [ ] Regression
 - [ ] Classification
 
-#### 1.1.2 Regression Model
+#### C1.W1.2 Regression Model
 
-##### 1.1.2.1 Linear regression model part 1
+##### C1.W1.2.1 Linear regression model part 1
 
 `Linear Regression Model` => a **Supervised Learning Model** that simply puts a line through a dataset
 - most commonly used model
@@ -167,7 +167,7 @@ Which of these is a type of unsupervised learning?
 | (x,y)        | single training example
 | (xⁱ,yⁱ)      | i-th training example
 
-##### 1.1.2.2 Linear regression model part 2
+##### C1.W1.2.2 Linear regression model part 2
 
 ```mermaid
 flowchart TD
@@ -208,7 +208,7 @@ Code
     - `marker` for symbol to use
     - `c` for color
 
-##### 1.1.2.4 Cost function formula
+##### C1.W1.2.4 Cost function formula
 
 ![img/01.01.parameters.png](img/01.01.parameters.png)
 - We can play with `w` & `b` to find the best fit line
@@ -231,7 +231,7 @@ Code
 - $`w`$ only, because we should choose $`b = 0`$
 - $`\hat{y}`$
 
-##### 1.1.2.5 Cost Function Intuition
+##### C1.W1.2.5 Cost Function Intuition
 
 To get a sense of how to minimize $`J`$ we can use a simplified model
 
@@ -265,7 +265,7 @@ To get a sense of how to minimize $`J`$ we can use a simplified model
 > :bulb: The goal of linear regression is to find the values of $`w,b`$ that
 > allows us to minimize $`J_{(w,b)}`$
 x
-##### 1.1.2.6 Visualizing the cost function
+##### C1.W1.2.6 Visualizing the cost function
 
 |               |                                                                                     |
 | --            | --                                                                                  |
@@ -292,7 +292,7 @@ x
 - the center of the contour is the minimum
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
 
-##### 1.1.2.7 Visualization examples
+##### C1.W1.2.7 Visualization examples
 
 Here are some examples of `J`
 
@@ -329,9 +329,9 @@ In the next lab, you can click on different points on the contour to view the co
 
 <details><summary>Ans</summary>4, 1</details>
 
-#### 1.1.3 Train the model with gradient descent
+#### C1.W1.3 Train the model with gradient descent
 
-##### 1.1.3.1 Gradient descent
+##### C1.W1.3.1 Gradient descent
 
 Want a systematic way to find values of $`w,b`$ that allows us to easily find
 smallest $`J`$
@@ -356,7 +356,7 @@ regression but also in advanced neural network models
 
 > `local minima` may not be the true lowest point
 
-##### 1.1.3.2 Implementing gradient descent
+##### C1.W1.3.2 Implementing gradient descent
 
 ![](/img/1.1.3.2.algorithm.png)
 - The `Gradient Descent` algorithm
@@ -371,7 +371,7 @@ regression but also in advanced neural network models
   - `tmp_b =` $`b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
   - `w = tmp_w && b = tmp_b`
 
-##### 1.1.3.3 Gradient descent intuition
+##### C1.W1.3.3 Gradient descent intuition
 
 ![](/img/1.1.3.3.min.J.png)
 - We want to find minimum `w,b`
@@ -395,7 +395,7 @@ regression but also in advanced neural network models
 - In the first case, we get $`w - \alpha (positive number)`$ which is the correct direction
 - However (_2nd graph_), slope is negative, and therefore also in the correct direction
 
-##### 1.1.3.4 Learning rate
+##### C1.W1.3.4 Learning rate
 
 ![](/img/1.1.3.4.alpha.png)
 - $`\alpha`$ is the __learning rate__ ie how big a step to take
@@ -412,7 +412,7 @@ regression but also in advanced neural network models
 - As we get closer to local minimum, gradient descent (_derivative function_)
   will __automatically take smaller steps__
 
-##### 1.1.3.5 Gradient descent for linear regression
+##### C1.W1.3.5 Gradient descent for linear regression
 
 ![](/img/1.1.3.5.recap.png)
 - linear regression model     $`f_{w,b}(x) = wx + b`$
@@ -456,7 +456,7 @@ regression but also in advanced neural network models
 ![](/img/1.1.3.5.convex.png) 
 - a __convex function__ will have a _single global minimum_
 
-##### 1.1.3.6 Running gradient descent
+##### C1.W1.3.6 Running gradient descent
 
 ![](/img/1.1.3.6.plot.png) 
 - left is _plot of the model_
@@ -501,16 +501,16 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 
 ### W2: Regression with Multiple Input Variables
 
-#### 1.2.1 Multiple Linear Regression
+#### C1.W2.1 Multiple Linear Regression
 
-##### 1.2.1.1 Multiple features
+##### C1.W2.1.1 Multiple features
 
-##### 1.2.1.2 Vectorization part 1
-##### 1.2.1.3 Vectorization part 2
+##### C1.W2.1.2 Vectorization part 1
+##### C1.W2.1.3 Vectorization part 2
 ##### Lab: Python, NumPy and vectorization
-##### 1.2.1.4 Gradient descent for multiple linear regression
+##### C1.W2.1.4 Gradient descent for multiple linear regression
 ##### Lab: Muliple linear regression
-#### 1.2.2 Gradient Descent In Practice
+#### C1.W2.2 Gradient Descent In Practice
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
