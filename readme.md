@@ -188,7 +188,7 @@ B --> F[f (function)]
 ##### C1_W1_Lab02: Model representation
 
 - [Coursera Jupyter: Model representation](https://www.coursera.org/learn/machine-learning/ungradedLab/PhN1X/optional-lab-model-representation/lab)
-- [Local: Model Representation](/code/C1_W1_Lab02_Model_Representation.ipynb)
+- [Local: Model Representation](/code/C1_W1_Lab02_Model_Representation_Soln.ipynb)
 
 Here is a summary of some of the notation you will encounter.  
 
