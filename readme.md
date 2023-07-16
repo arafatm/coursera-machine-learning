@@ -35,7 +35,7 @@
       * [1.1.3.6 Running gradient descent](#1136-running-gradient-descent)
       * [Lab: Gradient descent](#lab-gradient-descent)
       * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
-  * [1.2 Wk 2: Regression with Multiple Input Variables](#12-wk-2-regression-with-multiple-input-variables)
+  * [W2: Regression with Multiple Input Variables](#w2-regression-with-multiple-input-variables)
     * [1.2.1 Multiple Linear Regression](#121-multiple-linear-regression)
       * [1.2.1.1 Multiple features](#1211-multiple-features)
       * [1.2.1.2 Vectorization part 1](#1212-vectorization-part-1)
@@ -43,6 +43,7 @@
       * [Lab: Python, NumPy and vectorization](#lab-python-numpy-and-vectorization)
       * [1.2.1.4 Gradient descent for multiple linear regression](#1214-gradient-descent-for-multiple-linear-regression)
       * [Lab: Muliple linear regression](#lab-muliple-linear-regression)
+    * [1.2.2 Gradient Descent In Practice](#122-gradient-descent-in-practice)
 
 <!-- vim-markdown-toc -->
 
@@ -498,7 +499,7 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 
 <details><summary>Ans</summary>2, 2</details>
 
-### 1.2 Wk 2: Regression with Multiple Input Variables
+### W2: Regression with Multiple Input Variables
 
 #### 1.2.1 Multiple Linear Regression
 
@@ -509,7 +510,7 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 ##### Lab: Python, NumPy and vectorization
 ##### 1.2.1.4 Gradient descent for multiple linear regression
 ##### Lab: Muliple linear regression
-
+#### 1.2.2 Gradient Descent In Practice
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
