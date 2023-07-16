@@ -6,7 +6,7 @@
 <!-- vim-markdown-toc GFM -->
 
 * [C1 Supervised Machine Learning: Regression and Classification](#c1-supervised-machine-learning-regression-and-classification)
-  * [W1 Introduction to Machine Learning](#w1-introduction-to-machine-learning)
+  * [C1.W1 Introduction to Machine Learning](#c1w1-introduction-to-machine-learning)
     * [C1.W1.M1 Supervised vs Unsuperverside Machine Learning](#c1w1m1-supervised-vs-unsuperverside-machine-learning)
       * [C1.W1.M1.1 What is machine learning?](#c1w1m11-what-is-machine-learning)
       * [C1.W1.M1.2 Supervised Learning: Regression Algorithms](#c1w1m12-supervised-learning-regression-algorithms)
@@ -35,7 +35,7 @@
       * [C1.W1.M3.6 Running gradient descent](#c1w1m36-running-gradient-descent)
       * [Lab: Gradient descent](#lab-gradient-descent)
       * [Quiz: Train the Model with Gradient Descent](#quiz-train-the-model-with-gradient-descent)
-  * [W2: Regression with Multiple Input Variables](#w2-regression-with-multiple-input-variables)
+  * [C1.W2: Regression with Multiple Input Variables](#c1w2-regression-with-multiple-input-variables)
     * [C1.W2.M1 Multiple Linear Regression](#c1w2m1-multiple-linear-regression)
       * [C1.W2.M1.1 Multiple features](#c1w2m11-multiple-features)
       * [C1.W2.M1.2 Vectorization part 1](#c1w2m12-vectorization-part-1)
@@ -49,7 +49,7 @@
 
 ## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
-### W1 Introduction to Machine Learning
+### C1.W1 Introduction to Machine Learning
 
 #### C1.W1.M1 Supervised vs Unsuperverside Machine Learning
 
@@ -499,7 +499,7 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 
 <details><summary>Ans</summary>2, 2</details>
 
-### W2: Regression with Multiple Input Variables
+### C1.W2: Regression with Multiple Input Variables
 
 #### C1.W2.M1 Multiple Linear Regression
 
