@@ -278,20 +278,20 @@ x
 | cost function | $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ |
 | goal          | minimize $`J_{(w,b)}`$                                                              |
 
-![](img/01.01.05.J.w.png)
+![img](img/01.01.05.J.w.png)
 - When we only have w, then we can plot `J` vs `w` in 2-dimensions
 
-![](img/01.01.05.soup.bowl.png)
+![img](img/01.01.05.soup.bowl.png)
 - However, when we add `b` then it's 3-dimensional
 - The value of `J` is the height
 
-![](img/01.01.05.contour.plot.png)
+![img](img/01.01.05.contour.plot.png)
 - this is easier to visualize as a `contour plot`
 
-![](img/01.01.05.mount.fuji.png)
+![img](img/01.01.05.mount.fuji.png)
 - Same as used to visualize height of mountains
 
-![](img/01.01.05.contour.visualize.png)
+![img](img/01.01.05.contour.visualize.png)
 - take a horizontal slice which gives you the same `J` for given `w,b`
 - the center of the contour is the minimum
 - __Countour__ allows us to visualize the 3-D `J` in 2-D
@@ -300,14 +300,14 @@ x
 
 Here are some examples of `J`
 
-![](img/01.01.06.bad.png)
+![img](img/01.01.06.bad.png)
 - We can see this is a pretty bad `J`
 
-![](img/01.01.06.less.bad.png)
-- A little less bad `J`
+![img](img/01.01.06.flat.png)
 
-![](img/01.01.06.good.png)
+![img](img/01.01.06.good.png)
 - This is pretty good and close to minimal (but not quite perfect)
+
 
 In the next lab, you can click on different points on the contour to view the cost function on the graph
 
