@@ -506,9 +506,18 @@ When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happen
 
 ### C1_W2: Regression with Multiple Input Variables
 
+This week, you'll extend linear regression to handle multiple input features.
+You'll also learn some methods for improving your model's training and
+performance, such as `vectorization`, `feature scaling`, `feature engineering`
+and `polynomial regression`. At the end of the week, you'll get to practice
+implementing linear regression in code.
+
 #### C1_W2_M1 Multiple Linear Regression
 
 ##### C1_W2_M1_1 Multiple features
+
+![](/img)
+- $`\vec{x}^{i}`$ = __vector__ of 4 parameters for $`i^{th}`$ row
 
 ##### C1_W2_M1_2 Vectorization part 1
 ##### C1_W2_M1_3 Vectorization part 2
