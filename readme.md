@@ -516,8 +516,23 @@ implementing linear regression in code.
 
 ##### C1_W2_M1_1 Multiple features
 
-![](/img)
-- $`\vec{x}^{i}`$ = __vector__ of 4 parameters for $`i^{th}`$ row
+![](/img/1.2.1.1.multiple.features.png)
+- $`\vec{x}^{(i)}`$ = __vector__ of 4 parameters for $`i^{th}`$ row
+  = $`[1416 3 2 40]`$
+
+![](/img/1.2.1.1.model.png)
+- In this example, house price increase by (multiply 1k)
+  - `0.1` per square foot
+  - `4` per bedroom
+  - `10` per floor
+  - `-2` per year old
+  - add `80` base price
+
+![](/img/1.2.1.1.multiple.linear.regression.png)
+- We can simplify the model 
+- From linear algebra, this is a __row vector__ as opposed to _column vector_
+- this is __multiple linear regression__
+  - __Not__ _multivariate regression_
 
 ##### C1_W2_M1_2 Vectorization part 1
 ##### C1_W2_M1_3 Vectorization part 2
