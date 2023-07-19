@@ -41,10 +41,22 @@
         * [Quiz](#quiz)
       * [C1_W2_M1_2 Vectorization part 1](#c1_w2_m1_2-vectorization-part-1)
       * [C1_W2_M1_3 Vectorization part 2](#c1_w2_m1_3-vectorization-part-2)
-      * [Lab: Python, NumPy and vectorization](#lab-python-numpy-and-vectorization)
+      * [C1_W2_Lab01: Python Numpy Vectorization](#c1_w2_lab01-python-numpy-vectorization)
       * [C1_W2_M1_4 Gradient descent for multiple linear regression](#c1_w2_m1_4-gradient-descent-for-multiple-linear-regression)
-      * [Lab: Muliple linear regression](#lab-muliple-linear-regression)
-    * [C1_W2_M2 Gradient Descent In Practice](#c1_w2_m2-gradient-descent-in-practice)
+      * [C1_W2_Lab02: Muliple linear regression](#c1_w2_lab02-muliple-linear-regression)
+    * [Quiz: Multiple linear regression](#quiz-multiple-linear-regression)
+  * [C1_W2_M2 Gradient Descent in Practice](#c1_w2_m2-gradient-descent-in-practice)
+    * [C1_W2_M2_01 Feature scaling part 1](#c1_w2_m2_01-feature-scaling-part-1)
+    * [C1_W2_M2_02 Feature scaling part 2](#c1_w2_m2_02-feature-scaling-part-2)
+    * [C1_W2_M2_03 Checking gradient descent for convergence](#c1_w2_m2_03-checking-gradient-descent-for-convergence)
+    * [C1_W2_M2_04 Choosing the learning rate](#c1_w2_m2_04-choosing-the-learning-rate)
+    * [C1_W2_M2_05 Optional Lab: Feature scaling and learning rate](#c1_w2_m2_05-optional-lab-feature-scaling-and-learning-rate)
+    * [C1_W2_M2_06 Feature engineering](#c1_w2_m2_06-feature-engineering)
+    * [C1_W2_M2_07 Polynomial regression](#c1_w2_m2_07-polynomial-regression)
+    * [C1_W2_M2_08 Optional lab: Feature engineering and Polynomial regression](#c1_w2_m2_08-optional-lab-feature-engineering-and-polynomial-regression)
+    * [C1_W2_M2_09 Optional lab: Linear regression with scikit-learn](#c1_w2_m2_09-optional-lab-linear-regression-with-scikit-learn)
+    * [C1_W2_M2_10 Practice quiz: Gradient descent in practice](#c1_w2_m2_10-practice-quiz-gradient-descent-in-practice)
+    * [C1_W2_M2_11 Week 2 practice lab: Linear regression](#c1_w2_m2_11-week-2-practice-lab-linear-regression)
 
 <!-- vim-markdown-toc -->
 
@@ -566,11 +578,66 @@ How does vectorized algorithm works...
 
 ![](/img/i1.2.1.3.gradient.descent.png)
 
-##### Lab: Python, NumPy and vectorization
+##### C1_W2_Lab01: Python Numpy Vectorization
+
+- [Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/zadmO/optional-lab-python-numpy-and-vectorization/lab#?path=%2Fnotebooks%2FC1_W2_Lab01_Python_Numpy_Vectorization_Soln.ipynb)
+- [Local](/code/C1_W2_Lab01_Python_Numpy_Vectorization_Soln.ipynb)
+  - $`a \cdot b`$ returns a scalar
+  - e.g. $`[1, 2, 3, 4] \cdot [-1, 4, 3, 2] = 24`$
 
 ##### C1_W2_M1_4 Gradient descent for multiple linear regression
-##### Lab: Muliple linear regression
-#### C1_W2_M2 Gradient Descent In Practice
+
+![](/img/1.2.1.4.gradient.descent.png)
+
+![](/img/1.2.1.4.algorithm.png)
+- `w & x` are now __vectors__
+- have to update all the parameters simultaneously for $`w_{1} .. w_{n}`$ as well as $`b`$
+
+![](/img/1.2.1.4.normal.equation.png)
+- __Normal Equation__
+ 
+##### C1_W2_Lab02: Muliple linear regression
+
+- [Optional Lab: Multiple linear regression | Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/7GEJh/optional-lab-multiple-linear-regression/lab)
+- [Local](/code/C1_W2_Lab02_Multiple_Variable_Soln.ipynb)
+
+#### Quiz: Multiple linear regression
+
+1. In the training set below, what is $`x_4^{(3)}`$?
+
+| Size | Rooms | Floors | Age | Price |
+| -    | -     | -      | -   | -     |
+| 2104 | 5     | 1      | 45  | 460   |
+| 1416 | 3     | 2      | 40  | 232   |
+| 1534 | 3     | 2      | 30  | 315   |
+| 852  | 2     | 1      | 36  | 178   |
+
+2. Which of the following are potential benefits of vectorization?
+- [ ] It makes your code run faster
+- [ ] It makes your code shorter 
+- [ ] It allows your code to run more easily on parallel compute hardware
+- [ ] All of the above
+
+3. To make a gradient descent converge about twice as fast, a technique that almost always works is to double the learning rate $`alpha`$
+- [ ] True
+- [ ] False 
+
+<details><summary>Ans</summary>30, 4, F</details>
+
+### C1_W2_M2 Gradient Descent in Practice
+
+#### C1_W2_M2_01 Feature scaling part 1
+#### C1_W2_M2_02 Feature scaling part 2
+#### C1_W2_M2_03 Checking gradient descent for convergence
+#### C1_W2_M2_04 Choosing the learning rate
+#### C1_W2_M2_05 Optional Lab: Feature scaling and learning rate
+#### C1_W2_M2_06 Feature engineering
+#### C1_W2_M2_07 Polynomial regression
+#### C1_W2_M2_08 Optional lab: Feature engineering and Polynomial regression
+#### C1_W2_M2_09 Optional lab: Linear regression with scikit-learn
+#### C1_W2_M2_10 Practice quiz: Gradient descent in practice
+#### C1_W2_M2_11 Week 2 practice lab: Linear regression
+
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
