@@ -38,6 +38,7 @@
   * [C1_W2: Regression with Multiple Input Variables](#c1_w2-regression-with-multiple-input-variables)
     * [C1_W2_M1 Multiple Linear Regression](#c1_w2_m1-multiple-linear-regression)
       * [C1_W2_M1_1 Multiple features](#c1_w2_m1_1-multiple-features)
+        * [Quiz](#quiz)
       * [C1_W2_M1_2 Vectorization part 1](#c1_w2_m1_2-vectorization-part-1)
       * [C1_W2_M1_3 Vectorization part 2](#c1_w2_m1_3-vectorization-part-2)
       * [Lab: Python, NumPy and vectorization](#lab-python-numpy-and-vectorization)
@@ -534,9 +535,39 @@ implementing linear regression in code.
 - this is __multiple linear regression__
   - __Not__ _multivariate regression_
 
+###### Quiz
+
+In the training set below (see slide: C1_W2_M1_1 Multiple features), what is $`x_{1}^{(4)}`$?
+
+<details><summary>Ans</summary>852</details>
+
 ##### C1_W2_M1_2 Vectorization part 1
+
+Learning to write __vectorized code__ allows you to take advantage of modern
+numberical linear algebra libraries, as well as maybe GPU hardware.
+
+![](/img/1.2.1.2.vectorization.png)
+- Vector can be represented in Python as `np.array([1.0, 2.5, -3.3])` 
+- if `n` is large, this code (on left) is inefficient
+- for loop is more concise, but still not efficient
+- `np.dot(w,x) + b` is most efficient using __vectorization__
+- Vectorization has 2 benefits: _concise and efficient_
+- `np.dot` can use parallel hardware
+
 ##### C1_W2_M1_3 Vectorization part 2
+
+How does vectorized algorithm works...
+
+![](/img/1.2.1.3.vectorization.png) 
+- Without vectorization, we run calculations linearly
+- `np.dot` works in multiple steps:
+  - get values of the vectors `w, x`
+  - In parallel run `w[i] * x[i]`
+
+![](/img/i1.2.1.3.gradient.descent.png)
+
 ##### Lab: Python, NumPy and vectorization
+
 ##### C1_W2_M1_4 Gradient descent for multiple linear regression
 ##### Lab: Muliple linear regression
 #### C1_W2_M2 Gradient Descent In Practice
