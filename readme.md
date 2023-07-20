@@ -673,7 +673,7 @@ Which of the following is a valid step used during feature scaling? (see bedroom
 - We can choose `\alpha`
 
 ![](/img/)
-- Want to minimize _cost function_ $`\min_{\vec{w}, b} J(\vec{w}, b)`$
+- Want to minimize _cost function_ $`\min\limits_{\vec{w}, b} J(\vec{w}, b)`$
 
 #### C1_W2_M2_04 Choosing the learning rate
 #### C1_W2_M2_05 Optional Lab: Feature scaling and learning rate
