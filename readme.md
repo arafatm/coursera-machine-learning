@@ -48,6 +48,7 @@
   * [C1_W2_M2 Gradient Descent in Practice](#c1_w2_m2-gradient-descent-in-practice)
     * [C1_W2_M2_01 Feature scaling part 1](#c1_w2_m2_01-feature-scaling-part-1)
     * [C1_W2_M2_02 Feature scaling part 2](#c1_w2_m2_02-feature-scaling-part-2)
+      * [Quiz:](#quiz-1)
     * [C1_W2_M2_03 Checking gradient descent for convergence](#c1_w2_m2_03-checking-gradient-descent-for-convergence)
     * [C1_W2_M2_04 Choosing the learning rate](#c1_w2_m2_04-choosing-the-learning-rate)
     * [C1_W2_M2_05 Optional Lab: Feature scaling and learning rate](#c1_w2_m2_05-optional-lab-feature-scaling-and-learning-rate)
@@ -627,8 +628,53 @@ How does vectorized algorithm works...
 ### C1_W2_M2 Gradient Descent in Practice
 
 #### C1_W2_M2_01 Feature scaling part 1
+
+![](/img/1.2.2.01.values.png)
+- Use __Feature Scaling__ to enable gradient descent to run faster
+
+![](/img/1.2.2.01.size.png)
+- when we scatterplot size vs bedrooms, we see `x` has a much larger range than `y`
+- when we _contour plot_ we see an oval
+- ie small `w(size)` has a large change & _large_ `w(bedrooms` has a small change
+
+![](/img/1.2.2.01.scale.png)
+- since contour is tall & skinny, gradeient descent may end up bounding back and forth for a long time
+- a technique is to _scale the data_ to get a more _circular contour plot_
+
+:bulb: We can __speed up gradient descent by scaling our features__
+
 #### C1_W2_M2_02 Feature scaling part 2
+
+![](/img/1.2.2.02.scale.png)
+- scale by dividing $`x_i^{(j) / x_\max`$
+
+![](/img/1.2.2.02.mean.normalization.png)
+- __Mean Normalization__
+
+![](/img/1.2.2.02.z.score.normalization.png)
+- __Z-score Normalization__ also called __Gaussian Distribution__
+
+![](/img/1.2.2.02.feature.scaling.png)
+- When __Feature Scaling__ we want to range somewhere between `-1 <==> 1`
+- but the range is ok if it's relatively close
+- rescale if range is too large or too small
+
+##### Quiz:
+
+Which of the following is a valid step used during feature scaling? (see bedrooms vs size scatterplot)
+- [ ] Multiply each value by the maximum value for that feature
+- [ ] Divide each value by the maximum value for that feature
+
+<details><summary>Ans</summary>2</details>
+
 #### C1_W2_M2_03 Checking gradient descent for convergence
+
+![](/img/1.2.2.03.alpha.png)
+- We can choose `\alpha`
+
+![](/img/)
+- Want to minimize _cost function_ $`\min_{\vec w, b} J(\vec_w, b)`$
+
 #### C1_W2_M2_04 Choosing the learning rate
 #### C1_W2_M2_05 Optional Lab: Feature scaling and learning rate
 #### C1_W2_M2_06 Feature engineering
@@ -637,7 +683,6 @@ How does vectorized algorithm works...
 #### C1_W2_M2_09 Optional lab: Linear regression with scikit-learn
 #### C1_W2_M2_10 Practice quiz: Gradient descent in practice
 #### C1_W2_M2_11 Week 2 practice lab: Linear regression
-
 <!-- vim: set textwidth=0: -->
 <!-- vim: set wrapmargin=0: -->
 <!-- vim: set nowrap: -->
