@@ -646,7 +646,7 @@ How does vectorized algorithm works...
 #### C1_W2_M2_02 Feature scaling part 2
 
 ![](/img/1.2.2.02.scale.png)
-- scale by dividing $`x_i^{(j) / x_\max`$
+- scale by dividing $`x_i^{(j)} / x_\max`$
 
 ![](/img/1.2.2.02.mean.normalization.png)
 - __Mean Normalization__
