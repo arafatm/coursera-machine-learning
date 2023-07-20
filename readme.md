@@ -646,7 +646,7 @@ How does vectorized algorithm works...
 #### C1_W2_M2_02 Feature scaling part 2
 
 ![](/img/1.2.2.02.scale.png)
-- scale by dividing $`x_i^{(j)} / x_\max`$
+- scale by dividing $`x_i^{(j)} / \max_x`$
 
 ![](/img/1.2.2.02.mean.normalization.png)
 - __Mean Normalization__
@@ -670,7 +670,7 @@ Which of the following is a valid step used during feature scaling? (see bedroom
 #### C1_W2_M2_03 Checking gradient descent for convergence
 
 ![](/img/1.2.2.03.alpha.png)
-- We can choose `\alpha`
+- We can choose $`\alpha`$
 
 ![](/img/)
 - Want to minimize _cost function_ $`\min\limits_{\vec{w}, b} J(\vec{w}, b)`$
