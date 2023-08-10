@@ -2,21 +2,36 @@
 layout: default
 ---
 
-Home Layout
-<div class="container">
-  {%- if page.title -%}
-  <header class="post-header">
-    <h1 class="page-heading">{{ page.title }}</h1>
-  </header>
-  {%- endif -%}
+{{ site.baseurl }}
+{% if site.baseurl == "ghp/" %} 
+<section class="footer"> 
+  <h2>Debug variables: </h2> 
+  <ul>
+    <li>absolute_url {{ '/' | absolute_url }} </li> 
+    <li>relative_url {{ '/' | relative_url }} </li> 
+    <li>site.url {{ site.url }} </li> 
+    <li>site.baseurl {{ site.baseurl }} </li> 
+    <li>page.title {{ page.title }} </li> 
+    <li>page.url {{ page.url}} </li> 
+  </ul> 
+</section> 
+{% endif %}
 
-  {{ content }}
+<article>
+  <section class="body"> {{ content }} </section>
 
   {%- assign categories =  site.articles | map: 'categories' | 
   join: ','  | split: ',' | uniq | sort -%}
 
+  <nav><ul>
+      {%- for cat in categories -%}
+      <li><a href="#misc">{{ cat }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+
   {%- for cat in categories -%}
-  <h3>{{ cat }}</h3>
+  <h2><a id="{{cat}}">{{ cat }}</a></h2>
   <ul style="white-space: nowrap">
     {%- for article in site.articles -%}
     {%- if article.categories contains cat -%}
@@ -67,4 +82,4 @@ Home Layout
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
-</div>
+</article>
