@@ -2,8 +2,8 @@
 title: Coursera - Machine Learning
 ---
 
-- [Machine Learning | Coursera](https://www.coursera.org/specializations/machine-learning-introduction)
-- [Discourse  - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
+- [Coursera - Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction)
+- [Discourse - DeepLearning.AI](https://community.deeplearning.ai/top?period=daily)
 
 ## [C1 Supervised Machine Learning: Regression and Classification](https://www.coursera.org/learn/machine-learning/home/info)
 
