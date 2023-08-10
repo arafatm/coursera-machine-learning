@@ -128,16 +128,9 @@ Which of these is a type of unsupervised learning?
 
 ##### C1_W1_M2_2 Linear regression model part 2
 
-```mermaid
-flowchart TD
-
-A[training set] --> B[learning algorithm]
-B --> F[f (function)]
-```
-
 `f` is a linear function with _one_ variable
-- $`f_{w,b}(x) = wx + b`$ is equivalent to 
-- $`f(x) = wx + b`$
+- $ f_{w,b}(x) = wx + b $ is equivalent to 
+- $ f(x) = wx + b $
 
 ![img/01.01.linear.regression.png](img/01.01.linear.regression.png)
 
@@ -152,16 +145,16 @@ Here is a summary of some of the notation you will encounter.
 
 | General Notation        | Python (if applicable) | Description                                                                                                   |
 | :--                     | :--                    | :--                                                                                                           |
-| $`a`$                  |                        | scalar, non bold                                                                                              |
-| $`\mathbf{a}`$         |                        | vector, bold                                                                                                  |
+| $ a $                  |                        | scalar, non bold                                                                                              |
+| $ \mathbf{a} $         |                        | vector, bold                                                                                                  |
 | **Regression**          |                        |                                                                                                               |  |
-| $`\mathbf{x}`$         | `x_train`              | Training Example feature values (in this lab - Size (1000 sqft))                                              |
-| $`\mathbf{y}`$         | `y_train`              | Training Example  targets (in this lab Price (1000s of dollars))
-| $`x^{(i)}$, $y^{(i)}`$ | `x_i`, `y_i`           | $`i_{th}`$ Training Example                                                                                      |
+| $ \mathbf{x} $         | `x_train`              | Training Example feature values (in this lab - Size (1000 sqft))                                              |
+| $ \mathbf{y} $         | `y_train`              | Training Example  targets (in this lab Price (1000s of dollars))
+| $ x^{(i)}$, $y^{(i)} $ | `x_i`, `y_i`           | $ i_{th} $ Training Example                                                                                      |
 | m                       | `m`                    | Number of training examples                                                                                   |
-| $`w`$                  | `w`                    | parameter: weight                                                                                             |
-| $`b`$                  | `b`                    | parameter: bias                                                                                               |
-| $`f_{w,b}(x^{(i)})`$   | `f_wb`                 | The result of the model evaluation at $`x^{(i)}`$ parameterized by $`w,b`$: $`f_{w,b}(x^{(i)}) = wx^{(i)}+b`$ |
+| $ w $                  | `w`                    | parameter: weight                                                                                             |
+| $ b $                  | `b`                    | parameter: bias                                                                                               |
+| $ f_{w,b}(x^{(i)}) $   | `f_wb`                 | The result of the model evaluation at $ x^{(i)} $ parameterized by $ w,b $: $ f_{w,b}(x^{(i)}) = wx^{(i)}+b $ |
 
 Code
 - `NumPy`, a popular library for scientific computing
@@ -177,64 +170,64 @@ Code
 
 ![img/01.01.cost.function.png](img/01.01.cost.function.png)
 - 1st step to implement linear function is to define `Cost Function`
--  Given $`f_{w,b}(x) = wx + b`$ where `w` is the `slope` and `b` is the `y-intercept` 
-- `Cost function` takes  predicted $`\hat{y}`$ and compares to `y`
-- ie `error` = $`\hat{y} - y`$ 
-- $`\sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
+-  Given $ f_{w,b}(x) = wx + b $ where `w` is the `slope` and `b` is the `y-intercept` 
+- `Cost function` takes  predicted $ \hat{y} $ and compares to `y`
+- ie `error` = $ \hat{y} - y $ 
+- $ \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2} $ 
   - where `m` is the number of training examples
-- Dividing by `2m` makes the calculation neater $`\frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
-- Also known as `squared error cost function` $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2}`$ 
-- Which can be rewritten as $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ 
-- Remember we want to find values of `w,b` where $`\hat{y}^{(i)}`$ is close to $`y^{(i)}`$ for all $`(x^{(i)}, y^{(i)})`$
+- Dividing by `2m` makes the calculation neater $ \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2} $ 
+- Also known as `squared error cost function` $ J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})^{2} $ 
+- Which can be rewritten as $ J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2} $ 
+- Remember we want to find values of `w,b` where $ \hat{y}^{(i)} $ is close to $ y^{(i)} $ for all $ (x^{(i)}, y^{(i)}) $
 
 ###### Question: Which of these parameters of the model that can be adjusted?
-- $`w`$ and $`b`$
-- $`f_{w,b}`$
-- $`w`$ only, because we should choose $`b = 0`$
-- $`\hat{y}`$
+- $ w $ and $ b $
+- $ f_{w,b} $
+- $ w $ only, because we should choose $ b = 0 $
+- $ \hat{y} $
 
 ##### C1_W1_M2_5 Cost Function Intuition
 
-To get a sense of how to minimize $`J`$ we can use a simplified model
+To get a sense of how to minimize $ J $ we can use a simplified model
 
 |               |                                                                                     | simplified |
 | --            | --                                                                                  | --         |
-| model         | $`f_{w,b}(x) = wx + b`                                                              | $`f_{w}(x) = wx` by setting $`b=0`$                                                              |
-| parameters    | $`w`$, $`b`$                                                                        | $`w`$
-| cost function | $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ | $`J_{(w)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w}(x^{(i)}) - y^{(i)})^{2}`$ |
-| goal          | we want to minimize $`J_{(w,b)}`$                                                   | we want to minimize $`J_{(w)}`$                                                   |
+| model         | $ f_{w,b}(x) = wx + b`                                                              | $ f_{w}(x) = wx` by setting $ b=0 $                                                              |
+| parameters    | $ w $, $ b $                                                                        | $ w $
+| cost function | $ J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2} $ | $ J_{(w)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w}(x^{(i)}) - y^{(i)})^{2} $ |
+| goal          | we want to minimize $ J_{(w,b)} $                                                   | we want to minimize $ J_{(w)} $                                                   |
 
 ![img/01.01.04.simplified.png](img/01.01.04.simplified.png)
 - we can use simplified function to find the best fit line 
 
 ![img/01.01.04.w.is.1.png](img/01.01.04.w.is.1.png)
-- the 2nd graph shows that when $`w = 1`$ then $`J(1) = 0`$
+- the 2nd graph shows that when $ w = 1 $ then $ J(1) = 0 $
 
 ![img/01.01.04.w.is.0.5.png](img/01.01.04.w.is.0.5.png)
-- the 2nd graph shows that when $`w = 0.5`$ then $`J(0.5) ~= 0.58`$
+- the 2nd graph shows that when $ w = 0.5 $ then $ J(0.5) ~= 0.58 $
 
 ![img/01.01.04.w.is.0.png](img/01.01.04.w.is.0.png)
-- the 2nd graph shows that when $`w = 0`$ then $`J(0) ~= 2.33`$
+- the 2nd graph shows that when $ w = 0 $ then $ J(0) ~= 2.33 $
 
 ![img/01.01.04.negative.w.png](img/01.01.04.negative.w.png)
-- We can do this calculation for various $`w`$ even negative numbers
-- when $`w = -0.5`$ then $`J(-0.5) ~= 5.25`$
+- We can do this calculation for various $ w $ even negative numbers
+- when $ w = -0.5 $ then $ J(-0.5) ~= 5.25 $
 
 ![img/01.01.04.J.png](img/01.01.04.J.png)
 - We can plot various values for `w` and get a graph (on the right)
-- As we can see the cost function with $`w = 1`$ is the best fit line for __this data__
+- As we can see the cost function with $ w = 1 $ is the best fit line for __this data__
 
-> :bulb: The goal of linear regression is to find the values of $`w,b`$ that
-> allows us to minimize $`J_{(w,b)}`$
+> :bulb: The goal of linear regression is to find the values of $ w,b $ that
+> allows us to minimize $ J_{(w,b)} $
 x
 ##### C1_W1_M2_6 Visualizing the cost function
 
 |               |                                                                                     |
 | --            | --                                                                                  |
-| model         | $`f_{w,b}(x) = wx + b`                                                              |
-| parameters    | $`w`$, $`b`$                                                                        |
-| cost function | $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2}`$ |
-| goal          | minimize $`J_{(w,b)}`$                                                              |
+| model         | $ f_{w,b}(x) = wx + b $``$                                                             |
+| parameters    | $ w $, $ b $                                                                        |
+| cost function | $ J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^{2} $ |
+| goal          | minimize $ J_{(w,b)} $                                                              |
 
 ![img](img/01.01.05.J.w.png)
 - When we only have w, then we can plot `J` vs `w` in 2-dimensions
@@ -280,15 +273,15 @@ In the next lab, you can click on different points on the contour to view the co
 ##### Quiz: Regression Model
 
 1. Which of the following are the inputs, or features, that are fed into the model and with which the model is expected to make a prediciton?
-- [ ] $`m`$
-- [ ] $`w`$ and $`b`$
-- [ ] $`(x,y)`$
-- [ ] $`x`$
+- [ ] $ m $
+- [ ] $ w $ and $ b $
+- [ ] $ (x,y) $
+- [ ] $ x $
 
-2. For linear regression, if you find parameters $`w`$ and $`b`$ so that $`J_{(w,b)}`$ is very close to zero, what can you conclude?
-- [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really well
+2. For linear regression, if you find parameters $ w $ and $ b $ so that $ J_{(w,b)} $ is very close to zero, what can you conclude?
+- [ ] The selected values of the parameters $ w, b $ cause the algorithm to fit the training set really well
 - [ ] This is never possible. There must be a bug in the code
-- [ ] The selected values of the parameters $`w, b`$ cause the algorithm to fit the training set really poorly
+- [ ] The selected values of the parameters $ w, b $ cause the algorithm to fit the training set really poorly
 
 <details><summary>Ans</summary>4, 1</details>
 
@@ -296,19 +289,19 @@ In the next lab, you can click on different points on the contour to view the co
 
 ##### C1_W1_M3_1 Gradient descent
 
-Want a systematic way to find values of $`w,b`$ that allows us to easily find
-smallest $`J`$
+Want a systematic way to find values of $ w,b $ that allows us to easily find
+smallest $ J $
 
 `Gradient Descent` is an algorithm used for any function, not just in linear
 regression but also in advanced neural network models
 
 ![](/img/1.1.3.1.algorithm.png)
-- start with some $`w,b`$ e.g. $`(0,0)`$
-- keep changing $`w,b`$ to reduce $`J(w,b)`$
+- start with some $ w,b $ e.g. $ (0,0) $
+- keep changing $ w,b $ to reduce $ J(w,b) $
 - until we settle at or near a minimume
 
 ![](/img/1.1.3.1.local.minima.png)
-- Example of a more comples $`J`$
+- Example of a more comples $ J $
 - not a squared error cost
 - not linear regression
 - we want to get to the lowest point in this topography
@@ -323,51 +316,53 @@ regression but also in advanced neural network models
 
 ![](/img/1.1.3.2.algorithm.png)
 - The `Gradient Descent` algorithm
-- $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - $`\alpha`$ == `learning rate`. ie How "big a step" you take down the hill
-  - $`\frac{\partial}{\partial w} J_{(w,b)}`$ == `derivative`. ie which direction
-- $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
-- We repeat these 2 steps for $`w,b`$ until the algorithm __converges__
+- $ w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)} $
+  - $ \alpha $ == `learning rate`. ie How "big a step" you take down the hill
+  - $ \frac{\partial}{\partial w} J_{(w,b)} $ == `derivative`. ie which direction
+- $ b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)} $
+- We repeat these 2 steps for $ w,b $ until the algorithm __converges__
   - ie each subsequent step doesn't change the value
 - We want to _simultaneously_ update w and b at each step
-  - `tmp_w =` $`w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - `tmp_b =` $`b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - `tmp_w =` $ w - \alpha \frac{\partial}{\partial w} J_{(w,b)} $
+  - `tmp_b =` $ b - \alpha \frac{\partial}{\partial b} J_{(w,b)} $
   - `w = tmp_w && b = tmp_b`
 
 ##### C1_W1_M3_3 Gradient descent intuition
 
 ![](/img/1.1.3.3.min.J.png)
 - We want to find minimum `w,b`
-```math
+
+$$
 \begin{aligned}
 \text{repeat until convergence \{} \\ 
   &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
   &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 \}
 \end{aligned}
-```
-- Starting with finding `min w` we can simplify to just $`J(w)`$
-- Gradient descent with $`w = w - \alpha \frac{\partial}{\partial w} J_{(w)}`$
-- minimize cost by adjusting just `w`: $`\min J(w)`$
+$$
+
+- Starting with finding `min w` we can simplify to just $ J(w) $
+- Gradient descent with $ w = w - \alpha \frac{\partial}{\partial w} J_{(w)} $
+- minimize cost by adjusting just `w`: $ \min J(w) $
 
 ![](/img/1.1.3.3.slope.png)
 - Recall previous example where we set `b = 0`
 - Initialize `w` at a random location
-- $`\frac{\partial}{\partial w} J(w)`$ is the __slope__
+- $ \frac{\partial}{\partial w} J(w) $ is the __slope__
   - we want to find slopes __that take us to minimum w__
-- In the first case, we get $`w - \alpha (positive number)`$ which is the correct direction
+- In the first case, we get $ w - \alpha (positive number) $ which is the correct direction
 - However (_2nd graph_), slope is negative, and therefore also in the correct direction
 
 ##### C1_W1_M3_4 Learning rate
 
 ![](/img/1.1.3.4.alpha.png)
-- $`\alpha`$ is the __learning rate__ ie how big a step to take
+- $ \alpha $ is the __learning rate__ ie how big a step to take
   - If _too small_ then you take small steps and will take a long time to find minimum
   - If _too big_ then you might miss true minimum ie __diverge__ instead of _converge_
 
 ![](/img/1.1.3.4.local.minimum.png)
 - If you're already at local minimum...
-- `slope = 0` and therefore $`\frac{\partial}{\partial w} J(w) = 0`$ 
+- `slope = 0` and therefore $ \frac{\partial}{\partial w} J(w) = 0 $ 
   - ie `w = w * 0`
   - further _steps_ will bring you back here
 
@@ -378,19 +373,20 @@ regression but also in advanced neural network models
 ##### C1_W1_M3_5 Gradient descent for linear regression
 
 ![](/img/1.1.3.5.recap.png)
-- linear regression model     $`f_{w,b}(x) = wx + b`$
-- cost function               $`J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^{2}`$
+- linear regression model     $ f_{w,b}(x) = wx + b $
+- cost function               $ J_{(w,b)} = \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^{2} $
 - gradient descent algorithm  
   - `repeat until convergence {`
-  - $`w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}`$
-  - $`b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}`$
+  - $ w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)} $
+  - $ b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)} $
   - `}`
-- where $`\frac{\partial}{\partial w} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})x^{(i)}`$
-- and $`\frac{\partial}{\partial b} J_{(w,b)}`$ = $`\frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})`$
+- where $ \frac{\partial}{\partial w} J_{(w,b)} $ = $ \frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})x^{(i)} $
+- and $ \frac{\partial}{\partial b} J_{(w,b)} $ = $ \frac{1}{m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)}) $
 
 ![](/img/1.1.3.5.optional.png)
 - We can simplify for `w`
-```math
+
+$$
 \begin{align}
 \frac{\partial}{\partial w} J_{(w,b)} \\
 &= \frac{\partial}{\partial w} \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^2 \\
@@ -399,9 +395,11 @@ regression but also in advanced neural network models
 &= \frac{1}{m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)}) x^{(i)} \\
 &= \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}
 \end{align}
-```
+$$
+
 - and for `b`
-```math
+
+$$
 \begin{align}
 \frac{\partial}{\partial b} J_{(w,b)} \\
 &= \frac{\partial}{\partial b} \frac{1}{2m} \sum\limits_{i=1}^{m} (f_{w,b}(x^{(i)} - y^{(i)})^2 \\
@@ -410,7 +408,7 @@ regression but also in advanced neural network models
 &= \frac{1}{m} \sum\limits_{i=1}^{m} (wx^{(i)} + b - y^{(i)}) \\
 &= \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)})
 \end{align}
-```
+$$
 
 ![](/img/1.1.3.5.gradient.descent.png) 
 
@@ -428,7 +426,7 @@ regression but also in advanced neural network models
 - for this example, `w = -0.1, b = 900`
 - as we take each step we get closer to the global minimum
   - the yellow line is the __best line fit__
-- Given a house with `1250 sq ft`, we can predict it should sell for `$250k` per the model
+- Given a house with `1250 sq ft`, we can predict it should sell for  `$250k per the model`
 
 ![](/img/1.1.3.6.batch.png) 
 - __Batch Gradient Descent__ => each step of the gradient descent uses _all the training examples_
@@ -442,23 +440,25 @@ regression but also in advanced neural network models
 ##### Quiz: Train the Model with Gradient Descent
 
 1. Gradient descent is an algorithm for finding values of parameters w and b that minimize the cost function J.
-```math
+
+$$
 \begin{aligned}
 \text{repeat until convergence \{} \\ 
   &w = w - \alpha \frac{\partial}{\partial w} J_{(w,b)}\\
   &b = b - \alpha \frac{\partial}{\partial b} J_{(w,b)}\\
 \}
 \end{aligned}
-```
-When $`\frac{\partial}{\partial w} J_{(w,b)}`$ is a negative number, what happens to `w` after one update step?
+$$
+
+When $ \frac{\partial}{\partial w} J_{(w,b)} $ is a negative number, what happens to `w` after one update step?
 - [ ] It is not possible to tell is `w` will increase or decrease
 - [ ] w increases
 - [ ] w stays the same
 - [ ] w decreases 
 
 2. For linear regression, what is the update step for parameter b?
-- [ ] $`b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)})`$
-- [ ] $`b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)}`$
+- [ ] $ b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) $
+- [ ] $ b = b - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} ((f_{w,b}(x^{(i)}) - y^{(i)}) x^{(i)} $
 
 <details><summary>Ans</summary>2, 2</details>
 
@@ -475,8 +475,8 @@ implementing linear regression in code.
 ##### C1_W2_M1_1 Multiple features
 
 ![](/img/1.2.1.1.multiple.features.png)
-- $`\vec{x}^{(i)}`$ = __vector__ of 4 parameters for $`i^{th}`$ row
-  = $`[1416 3 2 40]`$
+- $ \vec{x}^{(i)} $ = __vector__ of 4 parameters for $ i^{th} $ row
+  = $ [1416 3 2 40] $
 
 ![](/img/1.2.1.1.model.png)
 - In this example, house price increase by (multiply 1k)
@@ -494,7 +494,7 @@ implementing linear regression in code.
 
 ###### Quiz
 
-In the training set below (see slide: C1_W2_M1_1 Multiple features), what is $`x_{1}^{(4)}`$?
+In the training set below (see slide: C1_W2_M1_1 Multiple features), what is $ x_{1}^{(4)} $?
 
 <details><summary>Ans</summary>852</details>
 
@@ -527,8 +527,8 @@ How does vectorized algorithm works...
 
 - [Coursera](https://www.coursera.org/learn/machine-learning/ungradedLab/zadmO/optional-lab-python-numpy-and-vectorization/lab#?path=%2Fnotebooks%2FC1_W2_Lab01_Python_Numpy_Vectorization_Soln.ipynb)
 - [Local](/code/C1_W2_Lab01_Python_Numpy_Vectorization_Soln.ipynb)
-  - $`a \cdot b`$ returns a scalar
-  - e.g. $`[1, 2, 3, 4] \cdot [-1, 4, 3, 2] = 24`$
+  - $ a \cdot b $ returns a scalar
+  - e.g. $ [1, 2, 3, 4] \cdot [-1, 4, 3, 2] = 24 $
 
 ##### C1_W2_M1_4 Gradient descent for multiple linear regression
 
@@ -536,7 +536,7 @@ How does vectorized algorithm works...
 
 ![](/img/1.2.1.4.algorithm.png)
 - `w & x` are now __vectors__
-- have to update all the parameters simultaneously for $`w_{1} .. w_{n}`$ as well as $`b`$
+- have to update all the parameters simultaneously for $ w_{1} .. w_{n} $ as well as $ b $
 
 ![](/img/1.2.1.4.normal.equation.png)
 - __Normal Equation__
@@ -548,7 +548,7 @@ How does vectorized algorithm works...
 
 #### Quiz: Multiple linear regression
 
-1. In the training set below, what is $`x_4^{(3)}`$?
+1. In the training set below, what is $ x_4^{(3)} $?
 
 | Size | Rooms | Floors | Age | Price |
 | -    | -     | -      | -   | -     |
@@ -563,7 +563,7 @@ How does vectorized algorithm works...
 - [ ] It allows your code to run more easily on parallel compute hardware
 - [ ] All of the above
 
-3. To make a gradient descent converge about twice as fast, a technique that almost always works is to double the learning rate $`alpha`$
+3. To make a gradient descent converge about twice as fast, a technique that almost always works is to double the learning rate $ alpha $
 - [ ] True
 - [ ] False 
 
@@ -590,7 +590,7 @@ How does vectorized algorithm works...
 #### C1_W2_M2_02 Feature scaling part 2
 
 ![](/img/1.2.2.02.scale.png)
-- scale by dividing $`x_i^{(j)} / \max_x`$
+- scale by dividing $ x_i^{(j)} / \max_x $
 
 ![](/img/1.2.2.02.mean.normalization.png)
 - __Mean Normalization__
@@ -614,10 +614,10 @@ Which of the following is a valid step used during feature scaling? (see bedroom
 #### C1_W2_M2_03 Checking gradient descent for convergence
 
 ![](/img/1.2.2.03.alpha.png)
-- We can choose $`\alpha`$
+- We can choose $ \alpha $
 
 ![](/img/)
-- Want to minimize _cost function_ $`\min\limits_{\vec{w}, b} J(\vec{w}, b)`$
+- Want to minimize _cost function_ $ \min\limits_{\vec{w}, b} J(\vec{w}, b) $
 
 #### C1_W2_M2_04 Choosing the learning rate
 #### C1_W2_M2_05 Optional Lab: Feature scaling and learning rate
