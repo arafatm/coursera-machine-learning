@@ -627,7 +627,3 @@ Which of the following is a valid step used during feature scaling? (see bedroom
 #### C1_W2_M2_09 Optional lab: Linear regression with scikit-learn
 #### C1_W2_M2_10 Practice quiz: Gradient descent in practice
 #### C1_W2_M2_11 Week 2 practice lab: Linear regression
-<!-- vim: set textwidth=0: -->
-<!-- vim: set wrapmargin=0: -->
-<!-- vim: set nowrap: -->
-<!-- vim: set foldlevel=9: -->
