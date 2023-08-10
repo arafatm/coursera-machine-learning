@@ -219,7 +219,7 @@ To get a sense of how to minimize $ J $ we can use a simplified model
 
 > :bulb: The goal of linear regression is to find the values of $ w,b $ that
 > allows us to minimize $ J_{(w,b)} $
-x
+
 ##### C1_W1_M2_6 Visualizing the cost function
 
 |               |                                                                                     |
